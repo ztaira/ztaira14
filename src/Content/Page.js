@@ -2,10 +2,37 @@ import React, { Component } from 'react';
 import "./PageContent.css";
 
 class Page extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "Loading",
+    }
+  }
+
+  componentDidMount() {
+    this.GetText(this.props.url);
+  }
+
+  GetText(url) {
+    let _this = this;
+    this.xhp = new XMLHttpRequest();
+    this.xhp.onload = function() {
+      let data = this.responseText;
+      console.log(_this);
+      _this.setState({text: data});
+    };
+    this.xhp.open("GET", url);
+    this.xhp.send();
+  }
+
+  componentWillUnmount() {
+    this.xhp.abort();
+  }
+
   render() {
     return (
       <div className="PageContent">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim id arcu maximus sodales. Fusce laoreet augue vel eros pulvinar tempus. Cras pretium, quam a molestie dignissim, quam orci vehicula lorem, hendrerit tincidunt est elit sed ex. Sed ultrices iaculis eros at sagittis. Integer quis lacus facilisis purus vehicula molestie. Maecenas non libero eu est ultrices egestas ut eu odio. Phasellus in volutpat mi, eget varius elit. Maecenas ut ex et ipsum interdum laoreet ultricies a nulla. Suspendisse velit purus, placerat a pulvinar quis, luctus sit amet odio. Vivamus varius nunc enim, pellentesque viverra quam tincidunt in. Nullam faucibus quis nisl a dapibus. In quis tortor accumsan, finibus nunc non, molestie velit. Vestibulum efficitur eleifend viverra.</p>
+        {this.state.text}
       </div>
     );
   }

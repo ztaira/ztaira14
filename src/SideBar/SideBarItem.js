@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
-class MenuBarItem extends Component {
+class SideBarItem extends Component {
   constructor(props) {
     super(props);
     this.ChangeAppPage = this.ChangeAppPage.bind(this);
@@ -21,4 +21,4 @@ class MenuBarItem extends Component {
   }
 }
 
-export default MenuBarItem;
+export default SideBarItem;
