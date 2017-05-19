@@ -5,6 +5,7 @@ import MenuBar from './MenuBar/MenuBar.js';
 import SideBar from "./SideBar/SideBar.js";
 import Homepage from "./Content/Homepage.js";
 import PageNotFound from "./Content/PageNotFound.js";
+import ModularItemPage from "./Content/ModularItemPage.js";
 import Page from "./Content/Page.js";
 
 class App extends Component {
@@ -23,11 +24,16 @@ class App extends Component {
         "foo2",
         "foo3",
       ],
-      sidebarlinks:[
+      sidebarlinks: [
         "",
         "https://github.com/ztaira14",
         "https://www.google.com",
         "home",
+      ],
+      modularitems: [
+        "Hello world",
+        "Hello world again",
+        "blahblahblahblahblahblah lol",
       ],
     }
   }
@@ -41,7 +47,7 @@ class App extends Component {
           <MenuBar setstate={this.setState.bind(this)} menuitems={this.state.menuitems}/>
           <Route path="/home" component={Homepage} />
           <Route path="/thing2" component={PageNotFound} />
-          <Route path="/thing3" component={() => <Page url="www.example.com" />} />
+          <Route path="/thing3" component={() => <ModularItemPage items={this.state.modularitems} />} />
           <Route path="/thing4" component={() => <Page url="https://raw.githubusercontent.com/ztaira14/abacus/master/README.md" />} />
         </div>
       </BrowserRouter>
