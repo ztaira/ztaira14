@@ -34,6 +34,13 @@ class App extends Component {
         "Hello world",
         "Hello world again",
         "blahblahblahblahblahblah lol",
+        "Man this is some ugly site",
+        "I really hope this gets better",
+        "one more",
+        "one moore",
+        "one mooore",
+        "and another",
+        "and another!",
       ],
     }
   }
