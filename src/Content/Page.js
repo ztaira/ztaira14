@@ -18,7 +18,6 @@ class Page extends Component {
     this.xhp = new XMLHttpRequest();
     this.xhp.onload = function() {
       let data = this.responseText;
-      console.log(_this);
       _this.setState({text: data});
     };
     this.xhp.open("GET", url);
