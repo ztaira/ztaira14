@@ -23,6 +23,12 @@ class App extends Component {
         "foo2",
         "foo3",
       ],
+      sidebarlinks:[
+        "",
+        "https://github.com/ztaira14",
+        "https://www.google.com",
+        "home",
+      ],
     }
   }
 
@@ -31,7 +37,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Redirect from="/" to="/home" />
-          <SideBar setstate={this.setState.bind(this)} menuitems={this.state.sidebaritems}/>
+          <SideBar setstate={this.setState.bind(this)} menuitems={this.state.sidebaritems} menulinks={this.state.sidebarlinks}/>
           <MenuBar setstate={this.setState.bind(this)} menuitems={this.state.menuitems}/>
           <Route path="/home" component={Homepage} />
           <Route path="/thing2" component={PageNotFound} />

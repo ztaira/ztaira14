@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
 class SideBarItem extends Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class SideBarItem extends Component {
   render() {
     return (
       <li>
-        <Link to={"/"+this.props.text}>{this.props.text}</Link>
+        <a href={this.props.link}>{this.props.text}</a>
       </li>
     );
   }
