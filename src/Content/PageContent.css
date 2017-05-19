@@ -39,6 +39,7 @@ h1 {
 
 .ModularListItem {
   padding: 10px;
+  min-width: 400px;
   word-wrap: break-word;
   text-align: left;
   margin: 10px 0px;

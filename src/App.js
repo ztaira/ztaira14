@@ -6,6 +6,7 @@ import MenuBar from './MenuBar/MenuBar.js';
 import Homepage from "./Content/Homepage.js";
 import PageNotFound from "./Content/PageNotFound.js";
 import ModularItemPage from "./Content/ModularItemPage.js";
+import ModularListPage from "./Content/ModularListPage.js";
 import Page from "./Content/Page.js";
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         'thing2',
         'thing3',
         'thing4',
+        'thing5',
       ],
       sidebaritems: [
         {'label': "lol", 'link': ''},
@@ -36,6 +38,21 @@ class App extends Component {
         "and another",
         "and another!",
       ],
+      listitems: [
+        "List item 1",
+        "Another list item",
+        "Thingamajigger",
+        "jabberwock",
+        "blahblahblahblah",
+        "loock it's a mock",
+        "man i'm getting tired",
+        "of all these example texts",
+        "so many",
+        "i'm getting tired of typing",
+        "darn it",
+        "almost done",
+        "finally! i'm done!",
+      ],
     }
   }
 
@@ -47,9 +64,10 @@ class App extends Component {
           <SideBar menuitems={this.state.sidebaritems}/>
           <MenuBar menuitems={this.state.menuitems}/>
           <Route path="/home" component={Homepage} />
-          <Route path="/thing2" component={PageNotFound} />
-          <Route path="/thing3" component={() => <ModularItemPage items={this.state.modularitems} />} />
+          <Route path="/thing2" component={() => <ModularItemPage items={this.state.modularitems} />} />
+          <Route path="/thing3" component={() => <ModularListPage items={this.state.listitems} />} />
           <Route path="/thing4" component={() => <Page url="https://raw.githubusercontent.com/ztaira14/abacus/master/README.md" />} />
+          <Route path="/thing5" component={PageNotFound} />
         </div>
       </BrowserRouter>
     );
