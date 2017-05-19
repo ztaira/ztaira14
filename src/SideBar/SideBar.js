@@ -9,13 +9,12 @@ class SideBar extends Component {
   }
 
   ReturnSideBarItem(item) {
-    return <SideBarItem key={item[0]} setstate={this.props.setstate} link={item[1]} text={item[0]} />;
+    return <SideBarItem key={item.label} link={item.link} label={item.label} />;
   }
 
   render() {
-    let zip = (a1, a2) => a1.map((x, i) => [x, a2[i]]);
     return (
-      <ul className="SideBar">{zip(this.props.menuitems, this.props.menulinks).map(this.ReturnSideBarItem)}</ul>
+      <ul className="SideBar">{this.props.menuitems.map(this.ReturnSideBarItem)}</ul>
     );
   }
 }

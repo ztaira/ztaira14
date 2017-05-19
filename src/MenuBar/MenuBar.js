@@ -9,7 +9,7 @@ class MenuBar extends Component {
   }
 
   ReturnMenuBarItem(item) {
-    return <MenuBarItem key={item} setstate={this.props.setstate} text={item} />;
+    return <MenuBarItem key={item} text={item} />;
   }
 
   render() {

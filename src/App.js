@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import './App.css';
-import MenuBar from './MenuBar/MenuBar.js';
 import SideBar from "./SideBar/SideBar.js";
+import MenuBar from './MenuBar/MenuBar.js';
 import Homepage from "./Content/Homepage.js";
 import PageNotFound from "./Content/PageNotFound.js";
 import ModularItemPage from "./Content/ModularItemPage.js";
@@ -19,16 +19,10 @@ class App extends Component {
         'thing4',
       ],
       sidebaritems: [
-        "lol",
-        "foo1",
-        "foo2",
-        "foo3",
-      ],
-      sidebarlinks: [
-        "",
-        "https://github.com/ztaira14",
-        "https://www.google.com",
-        "home",
+        {'label': "lol", 'link': ''},
+        {'label': "foo1", 'link': 'https://github.com/ztaira14'},
+        {'label': "foo2", 'link': 'https://www.google.com'},
+        {'label': "foo3", 'link': 'home'},
       ],
       modularitems: [
         "Hello world",
@@ -50,8 +44,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Redirect from="/" to="/home" />
-          <SideBar setstate={this.setState.bind(this)} menuitems={this.state.sidebaritems} menulinks={this.state.sidebarlinks}/>
-          <MenuBar setstate={this.setState.bind(this)} menuitems={this.state.menuitems}/>
+          <SideBar menuitems={this.state.sidebaritems}/>
+          <MenuBar menuitems={this.state.menuitems}/>
           <Route path="/home" component={Homepage} />
           <Route path="/thing2" component={PageNotFound} />
           <Route path="/thing3" component={() => <ModularItemPage items={this.state.modularitems} />} />
