@@ -49,8 +49,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Redirect from="/" to="/home" />
-          <SideBar menuitems={this.state.sidebaritems}/>
-          <MenuBar menuitems={this.state.menuitems}/>
+          <SideBar menuitems={this.state.sidebaritems} />
+          <MenuBar menuitems={this.state.menuitems} />
           <Route path="/home" component={Homepage} />
           <Route path="/thing2" component={ModularItemPage} />
           <Route
