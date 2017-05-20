@@ -53,8 +53,18 @@ class App extends Component {
           <MenuBar menuitems={this.state.menuitems}/>
           <Route path="/home" component={Homepage} />
           <Route path="/thing2" component={ModularItemPage} />
-          <Route path="/thing3" component={() => <ModularListPage items={this.state.listitems} />} />
-          <Route path="/thing4" component={() => <Page url="https://raw.githubusercontent.com/ztaira14/abacus/master/README.md" />} />
+          <Route
+            path="/thing3"
+            component={() => <ModularListPage
+              items={this.state.listitems}
+            />}
+          />
+          <Route 
+            path="/thing4" 
+            component={() => <Page
+              url="https://raw.githubusercontent.com/ztaira14/abacus/master/README.md"
+            />}
+          />
           <Route path="/thing5" component={PageNotFound} />
         </div>
       </BrowserRouter>
