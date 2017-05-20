@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./PageContent.css";
+import './PageContent.css';
 
 class ModularItem extends Component {
   GetUSLocaleDateString(project_created_at) {
@@ -12,17 +12,17 @@ class ModularItem extends Component {
   render() {
     return (
       <div className="ModularItem">
-        <a className='ModularItemLink' href={this.props.project.html_url}>
+        <a className="ModularItemLink" href={this.props.project.html_url}>
           {this.props.project.name}
         </a>
-        <p className='ModularItemParagraph'>
+        <p className="ModularItemParagraph">
           {this.props.project.description}
         </p>
         <div>
-          <span className='ModularItemLanguage'>
+          <span className="ModularItemLanguage">
             {this.props.project.language}
           </span>
-          <span className='ModularItemDate'>
+          <span className="ModularItemDate">
             {this.GetUSLocaleDateString(this.props.project.created_at)}
           </span>
         </div>

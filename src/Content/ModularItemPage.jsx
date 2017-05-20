@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import "./PageContent.css";
-import ModularItem from "./ModularItem.js";
+import './PageContent.css';
+import ModularItem from './ModularItem.js';
 
 class ModularItemPage extends Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class ModularItemPage extends Component {
   }
 
   componentDidMount() {
-    this.GetText("https://api.github.com/users/ztaira14/repos");
+    this.GetText('https://api.github.com/users/ztaira14/repos');
   }
 
   GetSourceRepos(project) {
@@ -28,7 +28,7 @@ class ModularItemPage extends Component {
         displayedProjects: JSON.parse(this.responseText).filter(_this.GetSourceRepos),
       });
     };
-    this.xhp.open("GET", url);
+    this.xhp.open('GET', url);
     this.xhp.send();
   }
 

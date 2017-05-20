@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import SideBarItem from './SideBarItem';
-import "./SideBar.css";
+import './SideBar.css';
 
 class SideBar extends Component {
   constructor(props) {

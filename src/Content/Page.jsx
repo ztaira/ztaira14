@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import "./PageContent.css";
+import './PageContent.css';
 
 class Page extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "Loading",
+      text: 'Loading',
     }
   }
 
@@ -19,7 +19,7 @@ class Page extends Component {
     this.xhp.onload = function() {
       _this.setState({text: _this.ProcessText(this.responseText)});
     };
-    this.xhp.open("GET", url);
+    this.xhp.open('GET', url);
     this.xhp.send();
   }
 

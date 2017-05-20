@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import './App.css';
-import SideBar from "./SideBar/SideBar.js";
+import SideBar from './SideBar/SideBar.js';
 import MenuBar from './MenuBar/MenuBar.js';
-import Homepage from "./Content/Homepage.js";
-import PageNotFound from "./Content/PageNotFound.js";
-import ModularItemPage from "./Content/ModularItemPage.js";
-import ModularListPage from "./Content/ModularListPage.js";
-import Page from "./Content/Page.js";
+import Homepage from './Content/Homepage.js';
+import PageNotFound from './Content/PageNotFound.js';
+import ModularItemPage from './Content/ModularItemPage.js';
+import ModularListPage from './Content/ModularListPage.js';
+import Page from './Content/Page.js';
 
 class App extends Component {
   constructor(props) {
@@ -21,25 +21,25 @@ class App extends Component {
         'thing5',
       ],
       sidebaritems: [
-        {'label': "lol", 'link': ''},
-        {'label': "foo1", 'link': 'https://github.com/ztaira14'},
-        {'label': "foo2", 'link': 'https://www.google.com'},
-        {'label': "foo3", 'link': 'home'},
+        {'label': 'lol', 'link': ''},
+        {'label': 'foo1', 'link': 'https://github.com/ztaira14'},
+        {'label': 'foo2', 'link': 'https://www.google.com'},
+        {'label': 'foo3', 'link': 'home'},
       ],
       listitems: [
-        "List item 1",
-        "Another list item",
-        "Thingamajigger",
-        "jabberwock",
-        "blahblahblahblah",
-        "loock it's a mock",
-        "man i'm getting tired",
-        "of all these example texts",
-        "so many",
-        "i'm getting tired of typing",
-        "darn it",
-        "almost done",
-        "finally! i'm done!",
+        'List item 1',
+        'Another list item',
+        'Thingamajigger',
+        'jabberwock',
+        'blahblahblahblah',
+        'loock it's a mock',
+        'man i'm getting tired',
+        'of all these example texts',
+        'so many',
+        'i'm getting tired of typing',
+        'darn it',
+        'almost done',
+        'finally! i'm done!',
       ],
     }
   }
