@@ -17,7 +17,7 @@ class ModularListPage extends Component {
       <div className="ModularListContent">
         {this.props.items.map(this.ReturnModularListItem)}
       </div>
-    )
+    );
   }
 }
 

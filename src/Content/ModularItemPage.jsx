@@ -45,7 +45,7 @@ class ModularItemPage extends Component {
       <div className="ModularPageContent">
         {this.state.displayedProjects.map(this.ReturnModularPageItem)}
       </div>
-    )
+    );
   }
 }
 
