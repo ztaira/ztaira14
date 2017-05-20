@@ -5,17 +5,37 @@ import ModularItem from "./ModularItem.js";
 class ModularItemPage extends Component {
   constructor(props) {
     super(props);
-    this.ReturnModularPageItem = this.ReturnModularPageItem.bind(this);
+    this.state = {
+      projects: [],
+    }
   }
 
-  ReturnModularPageItem(item) {
-    return <ModularItem key={item} text={item} />;
+  componentDidMount() {
+    this.GetText("https://api.github.com/users/ztaira14/repos");
+  }
+
+  GetText(url) {
+    let _this = this;
+    this.xhp = new XMLHttpRequest();
+    this.xhp.onload = function() {
+      _this.setState({projects: JSON.parse(this.responseText)});
+    };
+    this.xhp.open("GET", url);
+    this.xhp.send();
+  }
+
+  ReturnModularPageItem(project) {
+    return <ModularItem key={project.name} project={project} />;
+  }
+
+  componentWillUnmount() {
+    this.xhp.abort();
   }
 
   render() {
     return (
       <div className="ModularPageContent">
-        {this.props.items.map(this.ReturnModularPageItem)}
+        {this.state.projects.map(this.ReturnModularPageItem)}
       </div>
     )
   }

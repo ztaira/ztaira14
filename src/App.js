@@ -26,18 +26,6 @@ class App extends Component {
         {'label': "foo2", 'link': 'https://www.google.com'},
         {'label': "foo3", 'link': 'home'},
       ],
-      modularitems: [
-        "Hello world",
-        "Hello world again",
-        "blahblahblahblahblahblah lol",
-        "Man this is some ugly site",
-        "I really hope this gets better",
-        "one more",
-        "one moore",
-        "one mooore",
-        "and another",
-        "and another!",
-      ],
       listitems: [
         "List item 1",
         "Another list item",
@@ -64,7 +52,7 @@ class App extends Component {
           <SideBar menuitems={this.state.sidebaritems}/>
           <MenuBar menuitems={this.state.menuitems}/>
           <Route path="/home" component={Homepage} />
-          <Route path="/thing2" component={() => <ModularItemPage items={this.state.modularitems} />} />
+          <Route path="/thing2" component={ModularItemPage} />
           <Route path="/thing3" component={() => <ModularListPage items={this.state.listitems} />} />
           <Route path="/thing4" component={() => <Page url="https://raw.githubusercontent.com/ztaira14/abacus/master/README.md" />} />
           <Route path="/thing5" component={PageNotFound} />
