@@ -29,6 +29,13 @@ class Page extends Component {
     let current_paragraph = '';
     let current_line = '';
     let num_hashtags = '';
+    // NOTE:
+    // can use index as key because:
+    // 1) list and items are static, only loaded once, and not expected to change
+    // 2) the items in the list have no ids
+    // 3) the list is never reordered or filtered
+    // From https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
+    // (linked from the airbnb react style guide)
     for (var line=0; line < text_list.length; line++) {
       current_line = text_list[line];
       num_hashtags = (current_line.match(/#/g) || []).length;
