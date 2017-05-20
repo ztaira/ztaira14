@@ -13,6 +13,10 @@ class Page extends Component {
     this.GetText(this.props.url);
   }
 
+  componentWillUnmount() {
+    this.xhp.abort();
+  }
+
   GetText(url) {
     let _this = this;
     this.xhp = new XMLHttpRequest();
@@ -72,10 +76,6 @@ class Page extends Component {
     else if (num_hashtags === 6) {
       return <h6 key={key}>{text.slice(text.indexOf(' ') + 1)}</h6>;
     }
-  }
-
-  componentWillUnmount() {
-    this.xhp.abort();
   }
 
   render() {

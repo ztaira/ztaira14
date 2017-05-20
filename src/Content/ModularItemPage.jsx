@@ -15,6 +15,10 @@ class ModularItemPage extends Component {
     this.GetText('https://api.github.com/users/ztaira14/repos');
   }
 
+  componentWillUnmount() {
+    this.xhp.abort();
+  }
+
   GetSourceRepos(project) {
     return project.fork === false;
   }
@@ -34,10 +38,6 @@ class ModularItemPage extends Component {
 
   ReturnModularPageItem(project) {
     return <ModularItem key={project.name} project={project} />;
-  }
-
-  componentWillUnmount() {
-    this.xhp.abort();
   }
 
   render() {
