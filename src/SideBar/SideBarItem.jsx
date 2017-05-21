@@ -4,7 +4,12 @@ class SideBarItem extends Component {
   render() {
     return (
       <li>
-        <a href={this.props.link}>{this.props.label}</a>
+        <a href={this.props.link}>
+          <img
+            src={this.props.image}
+            alt={this.props.label}
+          />
+        </a>
       </li>
     );
   }

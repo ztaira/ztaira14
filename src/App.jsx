@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect, browserHistory } from 'react-router-dom';
 import './App.css';
 import SideBar from './SideBar/SideBar.jsx';
 import MenuBar from './MenuBar/MenuBar.jsx';
@@ -14,17 +14,19 @@ class App extends Component {
     super(props);
     this.state = {
       menuitems: [
-        'home',
-        'thing2',
-        'thing3',
-        'thing4',
-        'thing5',
+        'Home',
+        'Projects',
+        'Essays',
       ],
       sidebaritems: [
-        {'label': 'lol', 'link': ''},
-        {'label': 'foo1', 'link': 'https://github.com/ztaira14'},
-        {'label': 'foo2', 'link': 'https://www.google.com'},
-        {'label': 'foo3', 'link': 'home'},
+        {
+          'label': 'GitHub',
+          'link': 'https://github.com/ztaira14',
+        },
+        {
+          'label': 'LinkedIn',
+          'link': 'https://www.linkedin.com/in/zacharytaira/',
+        },
       ],
       listitems: [
         'List item 1',
@@ -46,15 +48,15 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter history={browserHistory}>
         <div className="App">
-          <Redirect from="/" to="/home" />
           <SideBar menuitems={this.state.sidebaritems} />
           <MenuBar menuitems={this.state.menuitems} />
-          <Route path="/home" component={Homepage} />
-          <Route path="/thing2" component={ModularItemPage} />
+          <Redirect from="/" to="/Home" />
+          <Route path="/Home" component={Homepage} />
+          <Route path="/Projects" component={ModularItemPage} />
           <Route
-            path="/thing3"
+            path="/Essays"
             component={() => <ModularListPage
               items={this.state.listitems}
             />}
