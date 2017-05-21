@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './PageContent.css';
-import ModularItem from './ModularItem.js';
+import ModularItem from './ModularItem.jsx';
 
 class ModularItemPage extends Component {
   constructor(props) {

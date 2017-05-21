@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MenuBarItem from './MenuBarItem';
+import MenuBarItem from './MenuBarItem.jsx';
 import './MenuBar.css';
 
 class MenuBar extends Component {

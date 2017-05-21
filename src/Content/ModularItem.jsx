@@ -11,7 +11,7 @@ class ModularItem extends Component {
 
   render() {
     return (
-      <div className="ModularItem">
+      <div className="ModularItem hvr-outline-in">
         <a className="ModularItemLink" href={this.props.project.html_url}>
           {this.props.project.name}
         </a>

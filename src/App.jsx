@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import './App.css';
-import SideBar from './SideBar/SideBar.js';
-import MenuBar from './MenuBar/MenuBar.js';
-import Homepage from './Content/Homepage.js';
-import PageNotFound from './Content/PageNotFound.js';
-import ModularItemPage from './Content/ModularItemPage.js';
-import ModularListPage from './Content/ModularListPage.js';
-import Page from './Content/Page.js';
+import SideBar from './SideBar/SideBar.jsx';
+import MenuBar from './MenuBar/MenuBar.jsx';
+import Homepage from './Content/Homepage.jsx';
+import PageNotFound from './Content/PageNotFound.jsx';
+import ModularItemPage from './Content/ModularItemPage.jsx';
+import ModularListPage from './Content/ModularListPage.jsx';
+import Page from './Content/Page.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -32,14 +32,14 @@ class App extends Component {
         'Thingamajigger',
         'jabberwock',
         'blahblahblahblah',
-        'loock it's a mock',
-        'man i'm getting tired',
+        'loock its a mock',
+        'man im getting tired',
         'of all these example texts',
         'so many',
-        'i'm getting tired of typing',
+        'im getting tired of typing',
         'darn it',
         'almost done',
-        'finally! i'm done!',
+        'finally! im done!',
       ],
     }
   }

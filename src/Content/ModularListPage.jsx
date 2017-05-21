@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './PageContent.css';
-import ModularListItem from './ModularListItem.js';
+import ModularListItem from './ModularListItem.jsx';
 
 class ModularListPage extends Component {
   constructor(props) {
