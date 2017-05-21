@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect, browserHistory } from 'react-router-dom';
+import { BrowserRouter, Route, browserHistory } from 'react-router-dom';
 import './App.css';
 import SideBar from './SideBar/SideBar.jsx';
 import MenuBar from './MenuBar/MenuBar.jsx';
@@ -52,7 +52,6 @@ class App extends Component {
         <div className="App">
           <SideBar menuitems={this.state.sidebaritems} />
           <MenuBar menuitems={this.state.menuitems} />
-          <Redirect from="/" to="/Home" />
           <Route path="/Home" component={Homepage} />
           <Route path="/Projects" component={ModularItemPage} />
           <Route

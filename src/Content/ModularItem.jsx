@@ -4,14 +4,12 @@ import './PageContent.css';
 class ModularItem extends Component {
   GetUSLocaleDateString(project_created_at) {
     let date = new Date(project_created_at).toLocaleString('en-US');;
-    console.log(date);
-    console.log(typeof(date));
     return date.slice(0, date.indexOf(','));
   }
 
   render() {
     return (
-      <div className="ModularItem hvr-outline-in">
+      <div className="ModularItem">
         <a className="ModularItemLink" href={this.props.project.html_url}>
           {this.props.project.name}
         </a>
