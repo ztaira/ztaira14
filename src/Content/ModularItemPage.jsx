@@ -40,21 +40,31 @@ class ModularItemPage extends Component {
     this.xhp.onload = function() {
       _this.setState({
         allProjects: JSON.parse(this.responseText),
-        displayedProjects: JSON.parse(this.responseText).filter(_this.GetSourceRepos),
+        displayedProjects: JSON.parse(this.responseText)
+          .filter(_this.GetSourceRepos)
+          .sort(_this.SortFunctionAlphabeticalByName),
       });
     };
     this.xhp.open('GET', url);
     this.xhp.send();
   }
 
+  SortFunctionAlphabeticalByName(a, b) {
+    if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+    if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+    return 0;
+  }
+
   FilterByAlphabeticalOrder() {
     console.log("a-z");
-    this.setState({displayedProjects: this.state.allProjects.filter(this.GetSourceRepos)});
+    this.setState({displayedProjects: this.state.displayedProjects
+      .sort(this.SortFunctionAlphabeticalByName)});
   }
 
   FilterByReverseAlphabeticalOrder() {
     console.log("z-a");
-    this.setState({displayedProjects: this.state.allProjects.filter(this.GetSourceRepos).reverse()});
+    this.setState({displayedProjects: this.state.displayedProjects
+      .sort(this.SortFunctionAlphabeticalByName).reverse()});
   }
 
   ReturnModularPageItem(project) {

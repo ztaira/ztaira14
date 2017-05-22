@@ -59,7 +59,7 @@ h1 {
   flex-basis: 100%;
 }
 
-.ModularPageFilters button {
+.ModularPageFilters a {
   background-color: rgb(240, 240, 240);
   color: rgb(180, 180, 180);
   border: 2px solid rgb(180, 180, 180);

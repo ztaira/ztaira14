@@ -4,7 +4,7 @@ import './PageContent.css';
 class ModularItemFilter extends Component {
   render() {
     return (
-      <button onClick={this.props.filter}>{this.props.label}</button>
+      <a onClick={this.props.filter}>{this.props.label}</a>
     );
   }
 }
