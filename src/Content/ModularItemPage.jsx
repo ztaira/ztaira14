@@ -30,10 +30,6 @@ class ModularItemPage extends Component {
     this.xhp.abort();
   }
 
-  GetSourceRepos(project) {
-    return project.fork === false;
-  }
-
   GetText(url) {
     let _this = this;
     this.xhp = new XMLHttpRequest();
@@ -53,6 +49,18 @@ class ModularItemPage extends Component {
     if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
     if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
     return 0;
+  }
+
+  GetSourceRepos(project) {
+    return project.fork === false;
+  }
+
+  GetCPlusPlusRepos(project) {
+    return project.language === 'C++';
+  }
+
+  GetPythonRepos(project) {
+    return project.language === 'Python';
   }
 
   FilterByAlphabeticalOrder() {
