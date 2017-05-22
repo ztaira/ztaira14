@@ -4,7 +4,17 @@ import './PageContent.css';
 class ModularItemFilter extends Component {
   render() {
     return (
-      <a onClick={this.props.filter}>{this.props.label}</a>
+      <a
+        onClick={() => {
+          this.props.muExBtnFunc(this.props.button.label);
+          this.props.button.filter();
+        }}
+        style={this.props.button.state ? {
+          'borderColor': 'rgb(0, 0, 0)',
+          'color': 'rgb(0, 0, 0)',
+        } : {}}>
+        {this.props.button.label}
+      </a>
     );
   }
 }

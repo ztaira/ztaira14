@@ -52,6 +52,7 @@ class App extends Component {
         <div className="App">
           <SideBar menuitems={this.state.sidebaritems} />
           <MenuBar menuitems={this.state.menuitems} />
+          <Route exact path="/" component={Homepage} />
           <Route path="/Home" component={Homepage} />
           <Route path="/Projects" component={ModularItemPage} />
           <Route
@@ -60,13 +61,6 @@ class App extends Component {
               items={this.state.listitems}
             />}
           />
-          <Route 
-            path="/thing4" 
-            component={() => <Page
-              url="https://raw.githubusercontent.com/ztaira14/abacus/master/README.md"
-            />}
-          />
-          <Route path="/thing5" component={PageNotFound} />
         </div>
       </BrowserRouter>
     );
