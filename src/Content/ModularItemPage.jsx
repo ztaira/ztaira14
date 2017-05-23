@@ -70,6 +70,12 @@ class ModularItemPage extends Component {
           'state': false,
           'updateArgument': this.RemovePythonJavascriptCRepos,
         },
+        {
+          'label': 'Hack-A-Week',
+          'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
+          'state': false,
+          'updateArgument': this.RemoveNonHackAWeekRepos,
+        },
       ],
     }
   }
@@ -128,10 +134,13 @@ class ModularItemPage extends Component {
         project.language !== 'Python');
   }
 
+  RemoveNonHackAWeekRepos(project) {
+    return project.description.slice(0, 11).toLowerCase() === "hack-a-week";
+  }
+
   GetActiveSortingFunction() {
     for (let i = 0; i < this.state.sortButtons.length; i++) {
       if (this.state.sortButtons[i].state === true) {
-        console.log(this.state.sortButtons[i]);
         return this.state.sortButtons[i].updateArgument;
       }
     }
