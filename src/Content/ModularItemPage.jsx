@@ -22,11 +22,13 @@ class ModularItemPage extends Component {
           'label': 'A-Z',
           'filter': this.SortByAlphabeticalOrder,
           'state': false,
+          'sortFunction': this.SortFunctionAlphabeticalByName,
         },
         {
           'label': 'Z-A',
           'filter': this.SortByReverseAlphabeticalOrder,
           'state': false,
+          'sortFunction': this.SortFunctionReverseAlphabeticalByName,
         },
       ],
       filterButtons: [
@@ -101,27 +103,41 @@ class ModularItemPage extends Component {
     return project.language === 'JavaScript';
   }
 
+  GetActiveSortingFunction() {
+    for (let i = 0; i < this.state.sortButtons.length; i++) {
+      if (this.state.sortButtons[i].state === true) {
+        console.log(this.state.sortButtons[i]);
+        return this.state.sortButtons[i].sortFunction;
+      }
+    }
+    return this.SortFunctionAlphabeticalByName;
+  }
+
   FilterByAllLanguages() {
     this.setState({displayedProjects: this.state.allProjects
-      .filter(this.RemoveNonSourceRepos)});
+      .filter(this.RemoveNonSourceRepos)
+      .sort(this.GetActiveSortingFunction())});
   }
 
   FilterByPythonLanguage() {
     this.setState({displayedProjects: this.state.allProjects
       .filter(this.RemoveNonSourceRepos)
-      .filter(this.RemoveNonPythonRepos)});
+      .filter(this.RemoveNonPythonRepos)
+      .sort(this.GetActiveSortingFunction())});
   }
 
   FilterByCLanguage() {
     this.setState({displayedProjects: this.state.allProjects
       .filter(this.RemoveNonSourceRepos)
-      .filter(this.RemoveNonCRepos)});
+      .filter(this.RemoveNonCRepos)
+      .sort(this.GetActiveSortingFunction())});
   }
 
   FilterByJavascriptLanguage() {
     this.setState({displayedProjects: this.state.allProjects
       .filter(this.RemoveNonSourceRepos)
-      .filter(this.RemoveNonJavascriptRepos)});
+      .filter(this.RemoveNonJavascriptRepos)
+      .sort(this.GetActiveSortingFunction())});
   }
 
 // ===========================================================================
@@ -134,6 +150,12 @@ class ModularItemPage extends Component {
     return 0;
   }
 
+  SortFunctionReverseAlphabeticalByName(a, b) {
+    if (a.name.toLowerCase() < b.name.toLowerCase()) return 1;
+    if (a.name.toLowerCase() > b.name.toLowerCase()) return -1;
+    return 0;
+  }
+
   SortByAlphabeticalOrder() {
     this.setState({displayedProjects: this.state.displayedProjects
       .sort(this.SortFunctionAlphabeticalByName)});
@@ -141,11 +163,11 @@ class ModularItemPage extends Component {
 
   SortByReverseAlphabeticalOrder() {
     this.setState({displayedProjects: this.state.displayedProjects
-      .sort(this.SortFunctionAlphabeticalByName).reverse()});
+      .sort(this.SortFunctionReverseAlphabeticalByName)});
   }
 
 // ===========================================================================
-// BUTTON FUNCTIONS
+// BUTTON DISPLAY FUNCTIONS
 // ===========================================================================
 
   ChangeActiveSortButton(button_name) {
