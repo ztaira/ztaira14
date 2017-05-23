@@ -8,10 +8,13 @@ class ModularItemPage extends Component {
     super(props);
     this.SortByAlphabeticalOrder = this.SortByAlphabeticalOrder.bind(this);
     this.SortByReverseAlphabeticalOrder = this.SortByReverseAlphabeticalOrder.bind(this);
+    this.SortByDateNewestFirst = this.SortByDateNewestFirst.bind(this);
+    this.SortByDateOldestFirst = this.SortByDateOldestFirst.bind(this);
     this.FilterByAllLanguages = this.FilterByAllLanguages.bind(this);
     this.FilterByPythonLanguage = this.FilterByPythonLanguage.bind(this);
     this.FilterByJavascriptLanguage = this.FilterByJavascriptLanguage.bind(this);
     this.FilterByCLanguage = this.FilterByCLanguage.bind(this);
+    this.FilterByMiscLanguage = this.FilterByMiscLanguage.bind(this);
     this.ChangeActiveSortButton = this.ChangeActiveSortButton.bind(this);
     this.ChangeActiveFilterButton = this.ChangeActiveFilterButton.bind(this);
     this.state = {
@@ -29,6 +32,18 @@ class ModularItemPage extends Component {
           'filter': this.SortByReverseAlphabeticalOrder,
           'state': false,
           'sortFunction': this.SortFunctionReverseAlphabeticalByName,
+        },
+        {
+          'label': 'Newest',
+          'filter': this.SortByDateNewestFirst,
+          'state': false,
+          'sortFunction': this.SortFunctionNewestDateFirst,
+        },
+        {
+          'label': 'Oldest',
+          'filter': this.SortByDateOldestFirst,
+          'state': false,
+          'sortFunction': this.SortFunctionOldestDateFirst,
         },
       ],
       filterButtons: [
@@ -50,6 +65,11 @@ class ModularItemPage extends Component {
         {
           'label': 'C++',
           'filter': this.FilterByCLanguage,
+          'state': false,
+        },
+        {
+          'label': 'Misc',
+          'filter': this.FilterByMiscLanguage,
           'state': false,
         },
       ],
@@ -103,6 +123,13 @@ class ModularItemPage extends Component {
     return project.language === 'JavaScript';
   }
 
+  RemovePythonJavascriptCRepos(project) {
+    return (project.language !== 'JavaScript' &&
+        project.language !== 'C' &&
+        project.language !== 'C++' &&
+        project.language !== 'Python');
+  }
+
   GetActiveSortingFunction() {
     for (let i = 0; i < this.state.sortButtons.length; i++) {
       if (this.state.sortButtons[i].state === true) {
@@ -140,6 +167,13 @@ class ModularItemPage extends Component {
       .sort(this.GetActiveSortingFunction())});
   }
 
+  FilterByMiscLanguage() {
+    this.setState({displayedProjects: this.state.allProjects
+      .filter(this.RemoveNonSourceRepos)
+      .filter(this.RemovePythonJavascriptCRepos)
+      .sort(this.GetActiveSortingFunction())});
+  }
+
 // ===========================================================================
 // SORTING FUNCTIONS
 // ===========================================================================
@@ -156,6 +190,22 @@ class ModularItemPage extends Component {
     return 0;
   }
 
+  SortFunctionNewestDateFirst(a, b) {
+    let d1 = new Date(a.created_at);
+    let d2 = new Date(b.created_at);
+    if (d1 < d2) return 1;
+    if (d1 > d2) return -1;
+    return 0;
+  }
+
+  SortFunctionOldestDateFirst(a, b) {
+    let d1 = new Date(a.created_at);
+    let d2 = new Date(b.created_at);
+    if (d1 < d2) return -1;
+    if (d1 > d2) return 1;
+    return 0;
+  }
+
   SortByAlphabeticalOrder() {
     this.setState({displayedProjects: this.state.displayedProjects
       .sort(this.SortFunctionAlphabeticalByName)});
@@ -164,6 +214,16 @@ class ModularItemPage extends Component {
   SortByReverseAlphabeticalOrder() {
     this.setState({displayedProjects: this.state.displayedProjects
       .sort(this.SortFunctionReverseAlphabeticalByName)});
+  }
+
+  SortByDateNewestFirst() {
+    this.setState({displayedProjects: this.state.displayedProjects
+      .sort(this.SortFunctionNewestDateFirst)});
+  }
+
+  SortByDateOldestFirst() {
+    this.setState({displayedProjects: this.state.displayedProjects
+      .sort(this.SortFunctionOldestDateFirst)});
   }
 
 // ===========================================================================
