@@ -6,15 +6,8 @@ import MutuallyExclusiveFilterList from './MutuallyExclusiveFilterList.jsx';
 class ModularItemPage extends Component {
   constructor(props) {
     super(props);
-    this.SortByAlphabeticalOrder = this.SortByAlphabeticalOrder.bind(this);
-    this.SortByReverseAlphabeticalOrder = this.SortByReverseAlphabeticalOrder.bind(this);
-    this.SortByDateNewestFirst = this.SortByDateNewestFirst.bind(this);
-    this.SortByDateOldestFirst = this.SortByDateOldestFirst.bind(this);
-    this.FilterByAllLanguages = this.FilterByAllLanguages.bind(this);
-    this.FilterByPythonLanguage = this.FilterByPythonLanguage.bind(this);
-    this.FilterByJavascriptLanguage = this.FilterByJavascriptLanguage.bind(this);
-    this.FilterByCLanguage = this.FilterByCLanguage.bind(this);
-    this.FilterByMiscLanguage = this.FilterByMiscLanguage.bind(this);
+    this.UpdateDisplayedProjectsOnSortButtonClick = this.UpdateDisplayedProjectsOnSortButtonClick.bind(this);
+    this.UpdateDisplayedProjectsOnFilterButtonClick = this.UpdateDisplayedProjectsOnFilterButtonClick.bind(this);
     this.ChangeActiveSortButton = this.ChangeActiveSortButton.bind(this);
     this.ChangeActiveFilterButton = this.ChangeActiveFilterButton.bind(this);
     this.state = {
@@ -23,54 +16,59 @@ class ModularItemPage extends Component {
       sortButtons: [
         {
           'label': 'A-Z',
-          'filter': this.SortByAlphabeticalOrder,
+          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
           'state': false,
-          'sortFunction': this.SortFunctionAlphabeticalByName,
+          'updateArgument': this.SortFunctionAlphabeticalByName,
         },
         {
           'label': 'Z-A',
-          'filter': this.SortByReverseAlphabeticalOrder,
+          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
           'state': false,
-          'sortFunction': this.SortFunctionReverseAlphabeticalByName,
+          'updateArgument': this.SortFunctionReverseAlphabeticalByName,
         },
         {
           'label': 'Newest',
-          'filter': this.SortByDateNewestFirst,
+          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
           'state': false,
-          'sortFunction': this.SortFunctionNewestDateFirst,
+          'updateArgument': this.SortFunctionNewestDateFirst,
         },
         {
           'label': 'Oldest',
-          'filter': this.SortByDateOldestFirst,
+          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
           'state': false,
-          'sortFunction': this.SortFunctionOldestDateFirst,
+          'updateArgument': this.SortFunctionOldestDateFirst,
         },
       ],
       filterButtons: [
         {
           'label': 'All',
-          'filter': this.FilterByAllLanguages,
+          'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
           'state': false,
+          'updateArgument': this.RemoveNonSourceRepos,
         },
         {
           'label': 'Python',
-          'filter': this.FilterByPythonLanguage,
+          'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
           'state': false,
+          'updateArgument': this.RemoveNonPythonRepos,
         },
         {
           'label': 'JavaScript',
-          'filter': this.FilterByJavascriptLanguage,
+          'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
           'state': false,
+          'updateArgument': this.RemoveNonJavascriptRepos,
         },
         {
           'label': 'C++',
-          'filter': this.FilterByCLanguage,
+          'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
           'state': false,
+          'updateArgument': this.RemoveNonCRepos,
         },
         {
           'label': 'Misc',
-          'filter': this.FilterByMiscLanguage,
+          'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
           'state': false,
+          'updateArgument': this.RemovePythonJavascriptCRepos,
         },
       ],
     }
@@ -134,43 +132,16 @@ class ModularItemPage extends Component {
     for (let i = 0; i < this.state.sortButtons.length; i++) {
       if (this.state.sortButtons[i].state === true) {
         console.log(this.state.sortButtons[i]);
-        return this.state.sortButtons[i].sortFunction;
+        return this.state.sortButtons[i].updateArgument;
       }
     }
     return this.SortFunctionAlphabeticalByName;
   }
 
-  FilterByAllLanguages() {
+  UpdateDisplayedProjectsOnFilterButtonClick(filter_function) {
     this.setState({displayedProjects: this.state.allProjects
       .filter(this.RemoveNonSourceRepos)
-      .sort(this.GetActiveSortingFunction())});
-  }
-
-  FilterByPythonLanguage() {
-    this.setState({displayedProjects: this.state.allProjects
-      .filter(this.RemoveNonSourceRepos)
-      .filter(this.RemoveNonPythonRepos)
-      .sort(this.GetActiveSortingFunction())});
-  }
-
-  FilterByCLanguage() {
-    this.setState({displayedProjects: this.state.allProjects
-      .filter(this.RemoveNonSourceRepos)
-      .filter(this.RemoveNonCRepos)
-      .sort(this.GetActiveSortingFunction())});
-  }
-
-  FilterByJavascriptLanguage() {
-    this.setState({displayedProjects: this.state.allProjects
-      .filter(this.RemoveNonSourceRepos)
-      .filter(this.RemoveNonJavascriptRepos)
-      .sort(this.GetActiveSortingFunction())});
-  }
-
-  FilterByMiscLanguage() {
-    this.setState({displayedProjects: this.state.allProjects
-      .filter(this.RemoveNonSourceRepos)
-      .filter(this.RemovePythonJavascriptCRepos)
+      .filter(filter_function)
       .sort(this.GetActiveSortingFunction())});
   }
 
@@ -206,28 +177,13 @@ class ModularItemPage extends Component {
     return 0;
   }
 
-  SortByAlphabeticalOrder() {
+  UpdateDisplayedProjectsOnSortButtonClick(sort_function) {
     this.setState({displayedProjects: this.state.displayedProjects
-      .sort(this.SortFunctionAlphabeticalByName)});
-  }
-
-  SortByReverseAlphabeticalOrder() {
-    this.setState({displayedProjects: this.state.displayedProjects
-      .sort(this.SortFunctionReverseAlphabeticalByName)});
-  }
-
-  SortByDateNewestFirst() {
-    this.setState({displayedProjects: this.state.displayedProjects
-      .sort(this.SortFunctionNewestDateFirst)});
-  }
-
-  SortByDateOldestFirst() {
-    this.setState({displayedProjects: this.state.displayedProjects
-      .sort(this.SortFunctionOldestDateFirst)});
+      .sort(sort_function)});
   }
 
 // ===========================================================================
-// BUTTON DISPLAY FUNCTIONS
+// BUTTON STATE FUNCTIONS
 // ===========================================================================
 
   ChangeActiveSortButton(button_name) {
@@ -256,6 +212,10 @@ class ModularItemPage extends Component {
     this.setState({'filterButtons': buttons});
   }
 
+// ===========================================================================
+// RENDER FUNCTIONS
+// ===========================================================================
+
   ReturnModularPageItem(project) {
     return <ModularItem key={project.name} project={project} />;
   }
@@ -271,6 +231,7 @@ class ModularItemPage extends Component {
           muExBtnFunc={this.ChangeActiveSortButton}
           buttons={this.state.sortButtons}
         />
+        <div style={{"height": "20px", "width": "100%"}} />
         {this.state.displayedProjects.map(this.ReturnModularPageItem)}
       </div>
     );

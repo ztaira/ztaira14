@@ -7,7 +7,7 @@ class ModularItemFilter extends Component {
       <a
         onClick={() => {
           this.props.muExBtnFunc(this.props.button.label);
-          this.props.button.filter();
+          this.props.button.updateFunction(this.props.button.updateArgument);
         }}
         style={this.props.button.state ? {
           'borderColor': 'rgb(0, 0, 0)',
