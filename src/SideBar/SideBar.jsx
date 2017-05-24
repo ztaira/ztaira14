@@ -9,7 +9,7 @@ class SideBar extends Component {
   }
 
   ReturnSideBarItem(item) {
-    return <SideBarItem key={item.label} link={item.link} label={item.label} />;
+    return <SideBarItem key={item.label} sidebaritem={item} />;
   }
 
   render() {

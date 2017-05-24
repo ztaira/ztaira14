@@ -20,10 +20,12 @@ class App extends Component {
         {
           'label': 'GitHub',
           'link': 'https://github.com/ztaira14',
+          'image': 'https://simpleicons.org/icons/github.svg',
         },
         {
           'label': 'LinkedIn',
           'link': 'https://www.linkedin.com/in/zacharytaira/',
+          'image': 'https://simpleicons.org/icons/linkedin.svg',
         },
       ],
       listitems: [
