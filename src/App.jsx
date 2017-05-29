@@ -4,7 +4,7 @@ import './App.css';
 import SideBar from './SideBar/SideBar.jsx';
 import MenuBar from './MenuBar/MenuBar.jsx';
 import Homepage from './Content/Homepage.jsx';
-import ModularItemPage from './Content/ModularItemPage.jsx';
+import ProjectsPage from './Content/ProjectsPage.jsx';
 import ModularListPage from './Content/ModularListPage.jsx';
 
 class App extends Component {
@@ -51,7 +51,7 @@ class App extends Component {
           <MenuBar menuitems={this.state.menuitems} />
           <Route exact path="/" component={Homepage} />
           <Route path="/Home" component={Homepage} />
-          <Route path="/Projects" component={ModularItemPage} />
+          <Route path="/Projects" component={ProjectsPage} />
           <Route
             path="/List"
             component={() => <ModularListPage

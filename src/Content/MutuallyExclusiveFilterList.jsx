@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ModularItemFilter from './ModularItemFilter.jsx';
+import ProjectFilter from './ProjectFilter.jsx';
 
 class MutuallyExclusiveFilterList extends Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class MutuallyExclusiveFilterList extends Component {
   }
   ReturnButton(button) {
     return (
-      <ModularItemFilter
+      <ProjectFilter
         key={button.label}
         button={button}
         muExBtnFunc={this.props.muExBtnFunc}

@@ -76,7 +76,7 @@ h1 {
   cursor: pointer;
 }
 
-.ModularItem {
+.Project {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -89,23 +89,23 @@ h1 {
   background-color: rgb(255, 255, 255);
 }
 
-.ModularItemLink {
+.ProjectLink {
   font-weight: bold;
   color: #0366d6;
   text-align: left;
   padding: 0px;
 }
 
-.ModularItemParagraph {
+.ProjectParagraph {
   flex-grow: 1;
 }
 
-.ModularItemLanguage {
+.ProjectLanguage {
   display: block;
   float: left;
 }
 
-.ModularItemDate {
+.ProjectDate {
   display: block;
   float: right;
 }

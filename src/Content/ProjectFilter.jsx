@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './PageContent.css';
 
-class ModularItemFilter extends Component {
+class ProjectFilter extends Component {
   render() {
     return (
       <a
@@ -19,4 +19,4 @@ class ModularItemFilter extends Component {
   }
 }
 
-export default ModularItemFilter;
+export default ProjectFilter;

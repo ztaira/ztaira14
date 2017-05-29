@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './PageContent.css';
-import ModularItem from './ModularItem.jsx';
+import Project from './Project.jsx';
 import MutuallyExclusiveFilterList from './MutuallyExclusiveFilterList.jsx';
 
-class ModularItemPage extends Component {
+class ProjectPage extends Component {
   constructor(props) {
     super(props);
     this.UpdateDisplayedProjectsOnSortButtonClick = this.UpdateDisplayedProjectsOnSortButtonClick.bind(this);
@@ -226,7 +226,7 @@ class ModularItemPage extends Component {
 // ===========================================================================
 
   ReturnModularPageItem(project) {
-    return <ModularItem key={project.name} project={project} />;
+    return <Project key={project.name} project={project} />;
   }
 
   render() {
@@ -247,4 +247,4 @@ class ModularItemPage extends Component {
   }
 }
 
-export default ModularItemPage;
+export default ProjectPage;
