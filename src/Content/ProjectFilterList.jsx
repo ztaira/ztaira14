@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProjectFilter from './ProjectFilter.jsx';
 
-class MutuallyExclusiveFilterList extends Component {
+class ProjectFilterList extends Component {
   constructor(props) {
     super(props);
     this.ReturnButton = this.ReturnButton.bind(this);
@@ -25,4 +25,4 @@ class MutuallyExclusiveFilterList extends Component {
   }
 }
 
-export default MutuallyExclusiveFilterList;
+export default ProjectFilterList;

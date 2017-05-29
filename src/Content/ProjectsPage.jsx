@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './PageContent.css';
 import Project from './Project.jsx';
-import MutuallyExclusiveFilterList from './MutuallyExclusiveFilterList.jsx';
+import ProjectFilterList from './ProjectFilterList.jsx';
 
 class ProjectPage extends Component {
   constructor(props) {
@@ -232,11 +232,11 @@ class ProjectPage extends Component {
   render() {
     return (
       <div className="ModularPageContent">
-        <MutuallyExclusiveFilterList
+        <ProjectFilterList
           muExBtnFunc={this.ChangeActiveFilterButton}
           buttons={this.state.filterButtons}
         />
-        <MutuallyExclusiveFilterList
+        <ProjectFilterList
           muExBtnFunc={this.ChangeActiveSortButton}
           buttons={this.state.sortButtons}
         />
