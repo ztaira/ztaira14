@@ -112,14 +112,38 @@ h1 {
 
 .ModularListContent{
   margin: 80px 50px 50px 150px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  min-width: 980px;
 }
 
 .ModularListItem {
-  padding: 10px;
-  min-width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: left;
+  min-width: 300px;
+  flex: 1;
   word-wrap: break-word;
-  text-align: center;
-  margin: 0px 10px 20px 10px;
+  text-align: left;
   font-family: 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   background-color: rgb(255, 255, 255);
+}
+
+.ModularListItemDate {
+  margin: 0px;
+  padding: 10px;
+}
+
+.ModularListItemDescription {
+  margin: 0px;
+  padding: 10px;
+}
+
+.ModularListItemLink {
+  font-weight: bold;
+  color: #0366d6;
+  text-align: left;
+  padding: 10px;
+  width: 150px;
 }

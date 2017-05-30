@@ -8,14 +8,17 @@ class ModularListPage extends Component {
     this.ReturnModularListItem = this.ReturnModularListItem.bind(this);
   }
 
-  ReturnModularListItem(item) {
-    return <ModularListItem key={item} text={item} />;
+  ReturnModularListItem(entry) {
+    console.log(entry);
+    return <ModularListItem key={entry.name} entry={entry} />;
   }
 
   render() {
+    console.log(this.state);
     return (
       <div className="ModularListContent">
-        {this.props.items.map(this.ReturnModularListItem)}
+        {this.props.allEntries.map(this.ReturnModularListItem)}
+        <div className="RightColumnSpacer" />
       </div>
     );
   }

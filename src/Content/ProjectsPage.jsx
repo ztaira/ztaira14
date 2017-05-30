@@ -3,7 +3,7 @@ import './PageContent.css';
 import Project from './Project.jsx';
 import ProjectFilterList from './ProjectFilterList.jsx';
 
-class ProjectPage extends Component {
+class ProjectsPage extends Component {
   constructor(props) {
     super(props);
     this.UpdateDisplayedProjectsOnSortButtonClick = this.UpdateDisplayedProjectsOnSortButtonClick.bind(this);
@@ -80,6 +80,11 @@ class ProjectPage extends Component {
     }
   }
 
+
+// ===========================================================================
+// GET THE REPOSITORY DATA FROM GITHUB
+// ===========================================================================
+
   componentDidMount() {
     this.GetText('https://api.github.com/users/ztaira14/repos');
   }
@@ -87,10 +92,6 @@ class ProjectPage extends Component {
   componentWillUnmount() {
     this.xhp.abort();
   }
-
-// ===========================================================================
-// GET THE REPOSITORY DATA FROM GITHUB
-// ===========================================================================
 
   GetText(url) {
     let _this = this;
@@ -247,4 +248,4 @@ class ProjectPage extends Component {
   }
 }
 
-export default ProjectPage;
+export default ProjectsPage;
