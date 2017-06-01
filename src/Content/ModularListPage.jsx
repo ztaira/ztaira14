@@ -9,12 +9,10 @@ class ModularListPage extends Component {
   }
 
   ReturnModularListItem(entry) {
-    console.log(entry);
     return <ModularListItem key={entry.name} entry={entry} />;
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="ModularListContent">
         {this.props.allEntries.map(this.ReturnModularListItem)}

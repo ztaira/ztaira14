@@ -49,7 +49,6 @@ class App extends Component {
     let _this = this;
     this.xhp = new XMLHttpRequest();
     this.xhp.onload = function() {
-      console.log(this.responseText);
       _this.setState({
         allEntries: JSON.parse(this.responseText),
       });
@@ -60,7 +59,6 @@ class App extends Component {
 
   ReturnListRoutes(entry) {
     let url = 'https://raw.githubusercontent.com/ztaira14/journal/master/';
-    console.log(url + entry.file_name);
     return (
       <Route
         key={entry.file_name}

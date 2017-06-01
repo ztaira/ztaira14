@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './PageContent.css';
 import Project from './Project.jsx';
 import ProjectFilterList from './ProjectFilterList.jsx';
+import ProjectsBackup from './ProjectsBackup.js';
 
 class ProjectsPage extends Component {
   constructor(props) {
@@ -97,9 +98,28 @@ class ProjectsPage extends Component {
     let _this = this;
     this.xhp = new XMLHttpRequest();
     this.xhp.onload = function() {
+      if (this.status === 200) {
+        _this.setState({
+          allProjects: JSON.parse(this.responseText),
+          displayedProjects: JSON.parse(this.responseText)
+            .filter(_this.RemoveNonSourceRepos)
+            .sort(_this.SortFunctionAlphabeticalByName),
+        });
+      }
+      else
+      {
+        _this.setState({
+          allProjects: ProjectsBackup,
+          displayedProjects: ProjectsBackup
+            .filter(_this.RemoveNonSourceRepos)
+            .sort(_this.SortFunctionAlphabeticalByName),
+        });
+      }
+    };
+    this.xhp.onerror = function() {
       _this.setState({
-        allProjects: JSON.parse(this.responseText),
-        displayedProjects: JSON.parse(this.responseText)
+        allProjects: ProjectsBackup,
+        displayedProjects: ProjectsBackup
           .filter(_this.RemoveNonSourceRepos)
           .sort(_this.SortFunctionAlphabeticalByName),
       });
