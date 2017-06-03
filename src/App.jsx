@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, browserHistory } from 'react-router-dom';
+import { Route, browserHistory, HashRouter } from 'react-router-dom';
 import './App.css';
 import SideBar from './SideBar/SideBar.jsx';
 import MenuBar from './MenuBar/MenuBar.jsx';
@@ -62,7 +62,7 @@ class App extends Component {
     return (
       <Route
         key={entry.file_name}
-        path={"/ztaira14/Essays/" + entry.file_name.slice(0, -3)}
+        path={"/Essays/" + entry.file_name.slice(0, -3)}
         component={() => <Page
           url={url + entry.file_name}
         />}
@@ -71,23 +71,23 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter history={browserHistory}>
+      <HashRouter history={browserHistory}>
         <div className="App">
           <SideBar menuitems={this.state.sidebaritems} />
           <MenuBar menuitems={this.state.menuitems} />
-          <Route exact path="/ztaira14" component={Homepage} />
-          <Route path="/ztaira14/Home" component={Homepage} />
-          <Route path="/ztaira14/Projects" component={ProjectsPage} />
+          <Route exact path="/" component={Homepage} />
+          <Route path="/Home" component={Homepage} />
+          <Route path="/Projects" component={ProjectsPage} />
           <Route
             exact
-            path="/ztaira14/Essays"
+            path="/Essays"
             component={() => <ModularListPage
               allEntries={this.state.allEntries}
             />}
           />
           {this.state.allEntries.map(this.ReturnListRoutes)}
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
