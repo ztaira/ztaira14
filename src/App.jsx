@@ -15,7 +15,7 @@ class App extends Component {
       menuitems: [
         'Home',
         'Projects',
-        'List',
+        'Essays',
       ],
       sidebaritems: [
         {
@@ -62,7 +62,7 @@ class App extends Component {
     return (
       <Route
         key={entry.file_name}
-        path={"/List/" + entry.file_name.slice(0, -3)}
+        path={"/ztaira14/Essays/" + entry.file_name.slice(0, -3)}
         component={() => <Page
           url={url + entry.file_name}
         />}
@@ -75,12 +75,12 @@ class App extends Component {
         <div className="App">
           <SideBar menuitems={this.state.sidebaritems} />
           <MenuBar menuitems={this.state.menuitems} />
-          <Route exact path="/" component={Homepage} />
-          <Route path="/Home" component={Homepage} />
-          <Route path="/Projects" component={ProjectsPage} />
+          <Route exact path="/ztaira14" component={Homepage} />
+          <Route path="/ztaira14/Home" component={Homepage} />
+          <Route path="/ztaira14/Projects" component={ProjectsPage} />
           <Route
             exact
-            path="/List"
+            path="/ztaira14/Essays"
             component={() => <ModularListPage
               allEntries={this.state.allEntries}
             />}

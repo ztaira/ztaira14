@@ -12,7 +12,7 @@ class ModularListItem extends Component {
         </p>
         <Link
           className="ModularListItemLink"
-          to={"/List/" + this.props.entry.file_name.slice(0, -3)}>
+          to={"/ztaira14/Essays/" + this.props.entry.file_name.slice(0, -3)}>
           {this.props.entry.name}
         </Link>
         <p className="ModularListItemDescription">

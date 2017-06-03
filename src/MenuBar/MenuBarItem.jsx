@@ -5,7 +5,7 @@ class MenuBarItem extends Component {
   render() {
     return (
       <li>
-        <Link to={'/'+this.props.text}>{this.props.text}</Link>
+        <Link to={'/ztaira14/'+this.props.text}>{this.props.text}</Link>
       </li>
     );
   }

@@ -12,6 +12,10 @@ h1 {
   background-color: rgb(255, 255, 255);
 }
 
+.PageContent h1 {
+  margin: 0px 0px 35px 0px;
+}
+
 .HomePageContent {
   display: flex;
   flex-direction: row;
