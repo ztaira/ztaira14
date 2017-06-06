@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
