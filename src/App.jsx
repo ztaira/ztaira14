@@ -5,7 +5,7 @@ import SideBar from './SideBar/SideBar.jsx';
 import MenuBar from './MenuBar/MenuBar.jsx';
 import Homepage from './Content/Homepage.jsx';
 import ProjectsPage from './Content/ProjectsPage.jsx';
-import ModularListPage from './Content/ModularListPage.jsx';
+import EssaysPage from './Content/EssaysPage.jsx';
 import Page from './Content/Page.jsx';
 
 class App extends Component {
@@ -81,7 +81,7 @@ class App extends Component {
           <Route
             exact
             path="/Essays"
-            component={() => <ModularListPage
+            component={() => <EssaysPage
               allEntries={this.state.allEntries}
             />}
           />

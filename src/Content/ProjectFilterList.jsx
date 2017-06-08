@@ -18,7 +18,7 @@ class ProjectFilterList extends Component {
 
   render() {
     return (
-      <div className="ModularPageFilters">
+      <div className="ProjectFilters">
         {this.props.buttons.map(this.ReturnButton)}
       </div>
     );

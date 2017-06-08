@@ -252,7 +252,7 @@ class ProjectsPage extends Component {
 
   render() {
     return (
-      <div className="ModularPageContent">
+      <div className="ProjectContent">
         <ProjectFilterList
           muExBtnFunc={this.ChangeActiveFilterButton}
           buttons={this.state.filterButtons}

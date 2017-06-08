@@ -54,20 +54,20 @@ h1 {
   padding: 0px 20px 0px 30px;
 }
 
-.ModularPageContent {
+.ProjectContent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 80px 60px 50px 160px;
 }
 
-.ModularPageFilters {
+.ProjectFilters {
   margin: 0px 10px 0px 10px;
   flex-basis: 100%;
   min-width: 300px;
 }
 
-.ModularPageFilters a {
+.ProjectFilters a {
   background-color: rgb(240, 240, 240);
   color: rgb(180, 180, 180);
   border: 2px solid rgb(180, 180, 180);
@@ -114,14 +114,14 @@ h1 {
   float: right;
 }
 
-.ModularListContent {
+.EssaysContent {
   margin: 80px 60px 50px 160px;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   min-width: 980px;
 }
 
-.ModularListItem {
+.EssaysItem {
   display: flex;
   flex-direction: row;
   padding: 0px;
@@ -134,17 +134,17 @@ h1 {
   background-color: rgb(255, 255, 255);
 }
 
-.ModularListItemDate {
+.EssaysItemDate {
   margin: 0px;
   padding: 10px;
 }
 
-.ModularListItemDescription {
+.EssaysItemDescription {
   margin: 0px;
   padding: 10px;
 }
 
-.ModularListItemLink {
+.EssaysItemLink {
   font-weight: bold;
   color: #0366d6;
   text-align: left;
