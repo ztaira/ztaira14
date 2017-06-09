@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, browserHistory, HashRouter, Switch } from 'react-router-dom';
 import './App.css';
-import SideBar from './SideBar/SideBar.jsx';
 import MenuBar from './MenuBar/MenuBar.jsx';
 import Homepage from './Content/Homepage.jsx';
 import ProjectsPage from './Content/ProjectsPage.jsx';

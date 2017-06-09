@@ -2,25 +2,6 @@ exports[`test has not changed since the last snapshot 1`] = `
 <div
   className="App">
   <ul
-    className="SideBar">
-    <li>
-      <a
-        href="https://github.com/ztaira14">
-        <img
-          alt="GitHub"
-          src="https://simpleicons.org/icons/github.svg" />
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.linkedin.com/in/zacharytaira/">
-        <img
-          alt="LinkedIn"
-          src="https://simpleicons.org/icons/linkedin.svg" />
-      </a>
-    </li>
-  </ul>
-  <ul
     className="MenuBar">
     <li>
       <a
@@ -48,8 +29,6 @@ exports[`test has not changed since the last snapshot 1`] = `
     className="HomePage">
     <div
       className="HomePageContent">
-      <div />
-      <div />
       <div
         className="Bio">
         <img
@@ -95,8 +74,6 @@ exports[`test has not changed since the last snapshot 1`] = `
           Zach
         </p>
       </div>
-      <div />
-      <div />
     </div>
   </div>
 </div>
