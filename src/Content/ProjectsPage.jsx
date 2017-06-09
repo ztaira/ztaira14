@@ -12,8 +12,6 @@ class ProjectsPage extends Component {
     this.ChangeActiveSortButton = this.ChangeActiveSortButton.bind(this);
     this.ChangeActiveFilterButton = this.ChangeActiveFilterButton.bind(this);
     this.state = {
-      allProjects: [],
-      displayedProjects: [],
       sortButtons: [
         {
           'label': 'A-Z',
@@ -78,54 +76,11 @@ class ProjectsPage extends Component {
           'updateArgument': this.RemoveNonHackAWeekRepos,
         },
       ],
+      allProjects: ProjectsBackup,
+      displayedProjects: ProjectsBackup
+        .filter(this.RemoveNonSourceRepos)
+        .sort(this.SortFunctionAlphabeticalByName),
     }
-  }
-
-
-// ===========================================================================
-// GET THE REPOSITORY DATA FROM GITHUB
-// ===========================================================================
-
-  componentDidMount() {
-    this.GetText('https://api.github.com/users/ztaira14/repos');
-  }
-
-  componentWillUnmount() {
-    this.xhp.abort();
-  }
-
-  GetText(url) {
-    let _this = this;
-    this.xhp = new XMLHttpRequest();
-    this.xhp.onload = function() {
-      if (this.status === 200) {
-        _this.setState({
-          allProjects: JSON.parse(this.responseText),
-          displayedProjects: JSON.parse(this.responseText)
-            .filter(_this.RemoveNonSourceRepos)
-            .sort(_this.SortFunctionAlphabeticalByName),
-        });
-      }
-      else
-      {
-        _this.setState({
-          allProjects: ProjectsBackup,
-          displayedProjects: ProjectsBackup
-            .filter(_this.RemoveNonSourceRepos)
-            .sort(_this.SortFunctionAlphabeticalByName),
-        });
-      }
-    };
-    this.xhp.onerror = function() {
-      _this.setState({
-        allProjects: ProjectsBackup,
-        displayedProjects: ProjectsBackup
-          .filter(_this.RemoveNonSourceRepos)
-          .sort(_this.SortFunctionAlphabeticalByName),
-      });
-    };
-    this.xhp.open('GET', url);
-    this.xhp.send();
   }
 
 // ===========================================================================

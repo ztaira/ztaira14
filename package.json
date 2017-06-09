@@ -20,5 +20,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://ztaira.github.io/ztaira14"
+  "homepage": "http://ztaira.github.io"
 }
