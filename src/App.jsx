@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, browserHistory, HashRouter } from 'react-router-dom';
+import { Route, browserHistory, HashRouter, Switch } from 'react-router-dom';
 import './App.css';
 import SideBar from './SideBar/SideBar.jsx';
 import MenuBar from './MenuBar/MenuBar.jsx';
@@ -7,6 +7,7 @@ import Homepage from './Content/Homepage.jsx';
 import ProjectsPage from './Content/ProjectsPage.jsx';
 import EssaysPage from './Content/EssaysPage.jsx';
 import Page from './Content/Page.jsx';
+import PageNotFound from './Content/PageNotFound.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -75,17 +76,20 @@ class App extends Component {
         <div className="App">
           <SideBar menuitems={this.state.sidebaritems} />
           <MenuBar menuitems={this.state.menuitems} />
-          <Route exact path="/" component={Homepage} />
-          <Route path="/Home" component={Homepage} />
-          <Route path="/Projects" component={ProjectsPage} />
-          <Route
-            exact
-            path="/Essays"
-            component={() => <EssaysPage
-              allEntries={this.state.allEntries}
-            />}
-          />
-          {this.state.allEntries.map(this.ReturnListRoutes)}
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/Home" component={Homepage} />
+            <Route path="/Projects" component={ProjectsPage} />
+            <Route
+              exact
+              path="/Essays"
+              component={() => <EssaysPage
+                allEntries={this.state.allEntries}
+              />}
+            />
+            {this.state.allEntries.map(this.ReturnListRoutes)}
+            <Route component={PageNotFound} />
+          </Switch>
         </div>
       </HashRouter>
     );

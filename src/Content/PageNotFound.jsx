@@ -5,7 +5,7 @@ class PageNotFound extends Component {
   render() {
     return (
       <div className="PageContent">
-        <h1>404 Error: Page not found :(</h1>
+        <h1>This page doesn't exist :(</h1>
       </div>
     );
   }

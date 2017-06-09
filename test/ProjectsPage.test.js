@@ -195,3 +195,41 @@ it('has a working oldest-first sort function', function() {
   b.created_at = '2016-04-10T04:20:26Z';
   expect(this.projectspage.SortFunctionOldestDateFirst(a, b)).toBe(0);
 });
+
+it('has a working function to change the active filter button', function() {
+  for (let i = 0; i < this.projectspage.state.filterButtons.length; i++) {
+    this.projectspage.ChangeActiveFilterButton(this.projectspage.state.filterButtons[i].label);
+    for (let j = 0; j < this.projectspage.state.filterButtons.length; j++) {
+      if (i == j) {
+        expect(this.projectspage.state.filterButtons[j].state).toBe(true);
+      }
+      else {
+        expect(this.projectspage.state.filterButtons[j].state).toBe(false);
+      }
+    }
+  }
+});
+
+it('has a working function to change the active sort button', function() {
+  for (let i = 0; i < this.projectspage.state.sortButtons.length; i++) {
+    this.projectspage.ChangeActiveSortButton(this.projectspage.state.sortButtons[i].label);
+    for (let j = 0; j < this.projectspage.state.sortButtons.length; j++) {
+      if (i == j) {
+        expect(this.projectspage.state.sortButtons[j].state).toBe(true);
+      }
+      else {
+        expect(this.projectspage.state.sortButtons[j].state).toBe(false);
+      }
+    }
+  }
+});
+
+it('has a working function to get the active sorting function', function() {
+  expect(this.projectspage.SortFunctionAlphabeticalByName)
+    .toBe(this.projectspage.GetActiveSortingFunction());
+  for (let i = 0; i < this.projectspage.state.sortButtons.length; i++) {
+    this.projectspage.ChangeActiveSortButton(this.projectspage.state.sortButtons[i].label);
+    expect(this.projectspage.state.sortButtons[i].updateArgument)
+      .toBe(this.projectspage.GetActiveSortingFunction());
+  }
+});
