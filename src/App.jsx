@@ -74,7 +74,6 @@ class App extends Component {
     return (
       <HashRouter history={browserHistory}>
         <div className="App">
-          <SideBar menuitems={this.state.sidebaritems} />
           <MenuBar menuitems={this.state.menuitems} />
           <Switch>
             <Route exact path="/" component={Homepage} />

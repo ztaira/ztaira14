@@ -14,7 +14,9 @@ class MenuBar extends Component {
 
   render() {
     return (
-      <ul className="MenuBar">{this.props.menuitems.map(this.ReturnMenuBarItem)}</ul>
+      <ul className="MenuBar">
+        {this.props.menuitems.map(this.ReturnMenuBarItem)}
+      </ul>
     );
   }
 }

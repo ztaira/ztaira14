@@ -6,8 +6,6 @@ class Homepage extends Component {
     return (
       <div className="HomePage">
         <div className="HomePageContent">
-          <div />
-          <div />
           <div className="Bio">
             <img
               className="ProfilePic"
@@ -48,8 +46,6 @@ class Homepage extends Component {
             </p>
             <p>Zach</p>
           </div>
-          <div />
-          <div />
         </div>
       </div>
     );
