@@ -9,13 +9,13 @@ it('matches the response from api.github.com/users/ztaira14/repos', done => {
     console.log(response.length);
     console.log(ProjectsBackup.length);
     expect(response.length).toBe(ProjectsBackup.length);
-    for (counter = 0; counter < response.length; counter=counter+1) {
+    done();
+    for (let counter = 0; counter < 30; counter=counter+1) {
       console.log(i);
       let responseObject = response[i];
       let backupObject = ProjectsBackup.filter(item => {
         return item.name === responseObject.name;
       });
-      console.log(backupObject);
       expect(responseObject.name).toBe(backupObject.name);
       expect(responseObject.description).toBe(backupObject.description);
       expect(responseObject.language).toBe(backupObject.language);

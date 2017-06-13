@@ -217,7 +217,9 @@ class ProjectsPage extends Component {
           buttons={this.state.sortButtons}
         />
         <div style={{"height": "20px", "width": "100%"}} />
-        {this.state.displayedProjects.map(this.ReturnModularPageItem)}
+        <div className="ProjectList">
+          {this.state.displayedProjects.map(this.ReturnModularPageItem)}
+        </div>
       </div>
     );
   }

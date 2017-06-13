@@ -79,6 +79,11 @@ h1 {
   cursor: pointer;
 }
 
+.ProjectList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .Project {
   display: flex;
   flex-direction: column;
