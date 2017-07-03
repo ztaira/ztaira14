@@ -26,7 +26,7 @@ it('contains the expected sort buttons', function() {
       {
         'label': 'A-Z',
         'updateFunction': this.projectspage.UpdateDisplayedProjectsOnSortButtonClick,
-        'state': false,
+        'state': true,
         'updateArgument': this.projectspage.SortFunctionAlphabeticalByName,
       },
       {
@@ -56,7 +56,7 @@ it('contains the expected filter buttons', function() {
     {
       'label': 'All',
       'updateFunction': this.projectspage.UpdateDisplayedProjectsOnFilterButtonClick,
-      'state': false,
+      'state': true,
       'updateArgument': this.projectspage.RemoveNonSourceRepos,
     },
     {

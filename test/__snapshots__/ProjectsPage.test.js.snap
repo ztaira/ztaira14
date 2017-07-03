@@ -5,7 +5,12 @@ exports[`test has not changed since the last snapshot 1`] = `
     className="ProjectFilters">
     <a
       onClick={[Function]}
-      style={Object {}}>
+      style={
+        Object {
+          "borderColor": "rgb(0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+        }
+      }>
       All
     </a>
     <a
@@ -38,7 +43,12 @@ exports[`test has not changed since the last snapshot 1`] = `
     className="ProjectFilters">
     <a
       onClick={[Function]}
-      style={Object {}}>
+      style={
+        Object {
+          "borderColor": "rgb(0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+        }
+      }>
       A-Z
     </a>
     <a

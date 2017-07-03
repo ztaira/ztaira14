@@ -16,7 +16,7 @@ class ProjectsPage extends Component {
         {
           'label': 'A-Z',
           'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
-          'state': false,
+          'state': true,
           'updateArgument': this.SortFunctionAlphabeticalByName,
         },
         {
@@ -42,7 +42,7 @@ class ProjectsPage extends Component {
         {
           'label': 'All',
           'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
-          'state': false,
+          'state': true,
           'updateArgument': this.RemoveNonSourceRepos,
         },
         {
