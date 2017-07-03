@@ -50,25 +50,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       <div
         className="Intro">
         <p>
-          Hi, my name is Zachary Taira.
+          Hello, and welcome!
         </p>
         <p>
-          <b>
-            Why I made this:
-          </b>
-           Since last summer, my goal has been to complete a bunch of different time-boxed projects in order to learn more about various technologies and get used to actually finishing the side projects I start. This is Hack-A-Week 19, and I built it in order to learn React.
+          My name is Zachary Taira. I\'m an EE student at Northeastern University, and I built this site because I like learning, doing, and creating new things. You can see some of my other coding projects under the Projects page, and can read some of my thoughts and writeups under the Essays page.
         </p>
         <p>
-          <b>
-            What I liked:
-          </b>
-           The component-based architecture of React makes it very easy to break up your massive HTML document into small, intuitive components. As a result, creating a layout is much easier, since you only have to remember state and props for a single component rather than the entire webpage.
-        </p>
-        <p>
-          <b>
-            What I didn\'t like:
-          </b>
-           While the javascript is loading, the initial page is noticeably blank. This isn\'t really a problem with fast internet speeds, but it was extremely noticeable when I artificially throttled the network via Chrome\'s developer tools. I think it\'d be pretty cool if the bundling process also automatically populated the initial HTML file in order to make the initial page load feel faster, but that\'s a project for another day.
+          If you want some more info about this site, it\'s Hack-A-Week 19 under the Projects page. Happy browsing!
         </p>
         <p>
           Zach

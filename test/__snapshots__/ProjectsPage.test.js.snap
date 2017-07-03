@@ -678,6 +678,50 @@ exports[`test has not changed since the last snapshot 1`] = `
         </span>
       </div>
     </div>
+    <div
+      className="Project">
+      <a
+        className="ProjectLink"
+        href="https://github.com/ztaira14/ztaira14">
+        ztaira14
+      </a>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 19: The code behind the personal site I built with React
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          JavaScript
+        </span>
+        <span
+          className="ProjectDate">
+          5/15/2017
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project">
+      <a
+        className="ProjectLink"
+        href="https://github.com/ztaira14/ztaira14.github.io">
+        ztaira14.github.io
+      </a>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 19: A personal site built with React
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          JavaScript
+        </span>
+        <span
+          className="ProjectDate">
+          6/4/2017
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 `;

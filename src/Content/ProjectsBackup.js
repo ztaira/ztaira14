@@ -268,5 +268,23 @@ export default [
     "created_at": "2016-09-06T20:34:28Z",
     "updated_at": "2017-06-03T03:11:09Z",
     "language": "TeX",
+  },
+  {
+    "name": "ztaira14",
+    "html_url": "https://github.com/ztaira14/ztaira14",
+    "description": "Hack-A-Week 19: The code behind the personal site I built with React",
+    "fork": false,
+    "created_at": "2017-05-15T22:36:28Z",
+    "updated_at": "2017-06-03T03:11:09Z",
+    "language": "JavaScript",
+  },
+  {
+    "name": "ztaira14.github.io",
+    "html_url": "https://github.com/ztaira14/ztaira14.github.io",
+    "description": "Hack-A-Week 19: A personal site built with React",
+    "fork": false,
+    "created_at": "2017-06-05T01:31:28Z",
+    "updated_at": "2017-06-03T03:11:09Z",
+    "language": "JavaScript",
   }
 ];
