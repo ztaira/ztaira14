@@ -24,7 +24,7 @@ export default [
     "fork": false,
     "created_at": "2016-07-03T14:47:04Z",
     "updated_at": "2017-05-22T18:45:11Z",
-    "language": "HTML",
+    "language": "Python",
   },
   {
     "name": "bsmsViz",
@@ -114,7 +114,7 @@ export default [
     "fork": false,
     "created_at": "2016-02-26T17:27:30Z",
     "updated_at": "2017-01-25T16:40:59Z",
-    "language": "HTML",
+    "language": "JavaScript",
   },
   {
     "name": "httplescripts",

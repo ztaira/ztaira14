@@ -77,7 +77,13 @@ exports[`test has not changed since the last snapshot 1`] = `
   <div
     className="ProjectList">
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/abacus">
@@ -99,7 +105,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/absolutely_nothing">
@@ -121,7 +133,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/aes_python">
@@ -134,7 +152,7 @@ exports[`test has not changed since the last snapshot 1`] = `
       <div>
         <span
           className="ProjectLanguage">
-          HTML
+          Python
         </span>
         <span
           className="ProjectDate">
@@ -143,7 +161,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/bsmsViz">
@@ -165,7 +189,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#a9dfbf",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/donkey.zach">
@@ -187,7 +217,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/dotfiles">
@@ -209,7 +245,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/Email_Sender">
@@ -231,7 +273,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/evil_maid_suite">
@@ -253,7 +301,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/fb_creeper">
@@ -275,7 +329,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#a9dfbf",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/flappy_term">
@@ -297,7 +357,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/gitbub">
@@ -319,7 +385,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/hackaweek">
@@ -339,7 +411,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/HighChartsTest">
@@ -352,7 +430,7 @@ exports[`test has not changed since the last snapshot 1`] = `
       <div>
         <span
           className="ProjectLanguage">
-          HTML
+          JavaScript
         </span>
         <span
           className="ProjectDate">
@@ -361,7 +439,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/httplescripts">
@@ -383,7 +467,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/hub_where">
@@ -405,7 +495,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/journal">
@@ -425,7 +521,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/JSTest">
@@ -447,7 +549,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/myhistory">
@@ -469,7 +577,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/pretty-reqs">
@@ -491,7 +605,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#a9dfbf",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/python_flow">
@@ -513,7 +633,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/PythonGame">
@@ -535,7 +661,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/RubiksGUI">
@@ -557,7 +689,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/souper_trawler">
@@ -579,7 +717,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/TwitterBot">
@@ -601,7 +745,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#a9dfbf",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/uku_tabs">
@@ -623,7 +773,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/vim_notes">
@@ -645,7 +801,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/whiz">
@@ -667,7 +829,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/zachs_resume">
@@ -689,7 +857,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/ztaira14">
@@ -711,7 +885,13 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
     </div>
     <div
-      className="Project">
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
       <a
         className="ProjectLink"
         href="https://github.com/ztaira14/ztaira14.github.io">
