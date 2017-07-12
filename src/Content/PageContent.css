@@ -117,6 +117,12 @@ h1 {
   text-decoration: none;
 }
 
+.favorite {
+  color: #505050;
+  display: block;
+  float: right;
+}
+
 .ProjectParagraph {
   flex-grow: 1;
 }

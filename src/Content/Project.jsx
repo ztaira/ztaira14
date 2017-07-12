@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FavoriteStar from './FavoriteStar.jsx';
 import './PageContent.css';
 
 class Project extends Component {
@@ -38,9 +39,12 @@ class Project extends Component {
         style={this.GetProjectColor(this.props.project.language)}
         onClick={this.GoToUrl}
       >
-        <a className="ProjectLink" href={this.props.project.html_url}>
-          {this.props.project.name}
-        </a>
+        <div>
+          <a className="ProjectLink" href={this.props.project.html_url}>
+            {this.props.project.name}
+          </a>
+          <FavoriteStar projectName={this.props.project.name} />
+        </div>
         <p className="ProjectParagraph">
           {this.props.project.description}
         </p>
