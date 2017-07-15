@@ -13,17 +13,17 @@ class FavoriteStar extends Component {
     console.log('hello');
     e.stopPropagation();
     if (this.IsFavorite()) {
-      localStorage.removeItem(this.props.projectName);
+      window.localStorage.removeItem(this.props.projectName);
       this.setState({ update: !this.state.update });
     }
     else {
-      localStorage.setItem(this.props.projectName, 'is really cool');
+      window.localStorage.setItem(this.props.projectName, 'is really cool');
       this.setState({ update: !this.state.update });
     }
   }
 
   IsFavorite() {
-    if (localStorage.getItem(this.props.projectName) === 'is really cool') {
+    if (window.localStorage.getItem(this.props.projectName) === 'is really cool') {
       return true;
     }
     else {

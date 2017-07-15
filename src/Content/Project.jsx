@@ -29,7 +29,7 @@ class Project extends Component {
   }
 
   GoToUrl() {
-    window.location = this.props.project.html_url;
+    window.open(this.props.project.html_url);
   }
 
   render() {
