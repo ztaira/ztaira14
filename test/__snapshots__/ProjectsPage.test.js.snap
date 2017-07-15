@@ -84,11 +84,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/abacus">
-        abacus
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/abacus">
+          abacus
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 17: An abacus desktop app using electron. 
@@ -112,11 +119,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/absolutely_nothing">
-        absolutely_nothing
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/absolutely_nothing">
+          absolutely_nothing
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         The only code that never breaks. Ever. http://ztaira14.github.io/absolutely_nothing
@@ -140,11 +154,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/aes_python">
-        aes_python
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/aes_python">
+          aes_python
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 1: An attempt at implementing the AES in python, for funsies.
@@ -168,11 +189,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/bsmsViz">
-        bsmsViz
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/bsmsViz">
+          bsmsViz
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 16: Visualizing the BS/MS program\'s depth courses in Northeastern\'s ECE Department
@@ -196,11 +224,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#a9dfbf",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/donkey.zach">
-        donkey.zach
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/donkey.zach">
+          donkey.zach
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 3: ASCII racing game inspired by the legendary DONKEY.BAS.
@@ -224,11 +259,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f5b7b1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/dotfiles">
-        dotfiles
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/dotfiles">
+          dotfiles
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Everything I need to to set up my personal coding environment. 
@@ -252,11 +294,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/Email_Sender">
-        Email_Sender
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/Email_Sender">
+          Email_Sender
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Small email sender in Tkinter. Reads default email from a text file. Uses gmail. 
@@ -280,11 +329,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/evil_maid_suite">
-        evil_maid_suite
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/evil_maid_suite">
+          evil_maid_suite
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 10: Data visualization on the time I keylogged myself
@@ -308,11 +364,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/fb_creeper">
-        fb_creeper
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/fb_creeper">
+          fb_creeper
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 13: Python script to programmatically watch fb chat for you
@@ -336,11 +399,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#a9dfbf",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/flappy_term">
-        flappy_term
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/flappy_term">
+          flappy_term
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 4: ASCII Flappy Bird clone using ncurses. 
@@ -364,11 +434,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/gitbub">
-        gitbub
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/gitbub">
+          gitbub
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 15: Fun Github visualization using d3
@@ -392,11 +469,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f5b7b1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/hackaweek">
-        hackaweek
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/hackaweek">
+          hackaweek
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 8.5: An example skeleton for all my hack-a-weeks. 
@@ -418,11 +502,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/HighChartsTest">
-        HighChartsTest
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/HighChartsTest">
+          HighChartsTest
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         A graph using highcharts
@@ -446,11 +537,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/httplescripts">
-        httplescripts
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/httplescripts">
+          httplescripts
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 14 w/ shoarora: Run applescripts remotely via HTTP requests
@@ -474,11 +572,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/hub_where">
-        hub_where
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/hub_where">
+          hub_where
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 11 and 12: Python scripts to gather and visualize data from Hubway\'s bike-sharing stations. 
@@ -502,11 +607,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f5b7b1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/journal">
-        journal
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/journal">
+          journal
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         A public journal
@@ -528,11 +640,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/JSTest">
-        JSTest
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/JSTest">
+          JSTest
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         This test bounces a ball.
@@ -556,11 +675,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/myhistory">
-        myhistory
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/myhistory">
+          myhistory
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Small wrapper to make using IDLE better. 
@@ -584,11 +710,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/pretty-reqs">
-        pretty-reqs
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/pretty-reqs">
+          pretty-reqs
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 18: A plain text graph editor, written with react. 
@@ -612,11 +745,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#a9dfbf",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/python_flow">
-        python_flow
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/python_flow">
+          python_flow
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 2: A python flow visualizer in c++. Inspired by git log --graph.
@@ -640,11 +780,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/PythonGame">
-        PythonGame
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/PythonGame">
+          PythonGame
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         It\'s a bullet hell game in Python. It\'s pretty slow when too many objects are on the screen. Uses tkinter.
@@ -668,11 +815,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/RubiksGUI">
-        RubiksGUI
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/RubiksGUI">
+          RubiksGUI
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         A rubiks cube, implemented in tkinter. Operational via button input or key press. 
@@ -696,11 +850,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/souper_trawler">
-        souper_trawler
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/souper_trawler">
+          souper_trawler
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 9: A python script to scan a webpage and pull down relevant files.
@@ -724,11 +885,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f9e79f",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/TwitterBot">
-        TwitterBot
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/TwitterBot">
+          TwitterBot
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         My first TwitterBot! :D
@@ -752,11 +920,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#a9dfbf",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/uku_tabs">
-        uku_tabs
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/uku_tabs">
+          uku_tabs
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 6 and 7: A terminal-based guitar/ukulele tab management tool. 
@@ -780,11 +955,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f5b7b1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/vim_notes">
-        vim_notes
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/vim_notes">
+          vim_notes
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 5: A vim folding file for my notes. 
@@ -808,11 +990,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f5b7b1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/whiz">
-        whiz
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/whiz">
+          whiz
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         A bookmark function for the terminal, because \'cd\' is too slow. 
@@ -836,11 +1025,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#f5b7b1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/zachs_resume">
-        zachs_resume
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/zachs_resume">
+          zachs_resume
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 8: My resume in LaTeX
@@ -864,11 +1060,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/ztaira14">
-        ztaira14
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/ztaira14">
+          ztaira14
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 19: The code behind the personal site I built with React
@@ -892,11 +1095,18 @@ exports[`test has not changed since the last snapshot 1`] = `
           "backgroundColor": "#aed6f1",
         }
       }>
-      <a
-        className="ProjectLink"
-        href="https://github.com/ztaira14/ztaira14.github.io">
-        ztaira14.github.io
-      </a>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/ztaira14.github.io">
+          ztaira14.github.io
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
       <p
         className="ProjectParagraph">
         Hack-A-Week 19: A personal site built with React

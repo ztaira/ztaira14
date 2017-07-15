@@ -10,7 +10,6 @@ class FavoriteStar extends Component {
   }
 
   ToggleFavorite(e) {
-    console.log('hello');
     e.stopPropagation();
     if (this.IsFavorite()) {
       window.localStorage.removeItem(this.props.projectName);
