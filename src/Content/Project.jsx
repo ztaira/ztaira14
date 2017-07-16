@@ -43,7 +43,11 @@ class Project extends Component {
           <a className="ProjectLink" href={this.props.project.html_url}>
             {this.props.project.name}
           </a>
-          <FavoriteStar projectName={this.props.project.name} />
+          <FavoriteStar
+            projectName={this.props.project.name}
+            starUpdateFunc={this.props.starUpdateFunc}
+            starFilterFunc={this.props.starFilterFunc}
+          />
         </div>
         <p className="ProjectParagraph">
           {this.props.project.description}

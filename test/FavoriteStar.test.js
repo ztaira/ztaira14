@@ -24,8 +24,16 @@ beforeEach(function() {
   })();
   Object.defineProperty(window, 'localStorage', { value: localStorageMock });
 
+  var fakeFunction = function() {
+    return false;
+  }
+
   this.favoritestar = ReactDOM.render(
-    <FavoriteStar projectName={'example_Project'}/>,
+    <FavoriteStar
+      projectName={'example_Project'}
+      starUpdateFunc={fakeFunction}
+      starFilterFunc={fakeFunction}
+    />,
     document.body.appendChild(document.createElement('div'))
   );
 });

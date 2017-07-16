@@ -38,6 +38,11 @@ exports[`test has not changed since the last snapshot 1`] = `
       style={Object {}}>
       Hack-A-Week
     </a>
+    <a
+      onClick={[Function]}
+      style={Object {}}>
+      Starred
+    </a>
   </div>
   <div
     className="ProjectFilters">

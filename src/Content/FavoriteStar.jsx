@@ -19,6 +19,7 @@ class FavoriteStar extends Component {
       window.localStorage.setItem(this.props.projectName, 'is really cool');
       this.setState({ update: !this.state.update });
     }
+    this.props.starUpdateFunc(this.props.starFilterFunc);
   }
 
   IsFavorite() {
