@@ -11,6 +11,9 @@ class ProjectsPage extends Component {
     this.UpdateDisplayedProjectsOnFilterButtonClick = this.UpdateDisplayedProjectsOnFilterButtonClick.bind(this);
     this.ChangeActiveSortButton = this.ChangeActiveSortButton.bind(this);
     this.ChangeActiveFilterButton = this.ChangeActiveFilterButton.bind(this);
+    this.GetActiveFilterFunction = this.GetActiveFilterFunction.bind(this);
+    this.RemoveNonStarredRepos = this.RemoveNonStarredRepos.bind(this);
+    this.ReturnModularPageItem = this.ReturnModularPageItem.bind(this);
     this.state = {
       sortButtons: [
         {
@@ -75,6 +78,12 @@ class ProjectsPage extends Component {
           'state': false,
           'updateArgument': this.RemoveNonHackAWeekRepos,
         },
+        {
+          'label': 'Starred',
+          'updateFunction': this.UpdateDisplayedProjectsOnFilterButtonClick,
+          'state': false,
+          'updateArgument': this.RemoveNonStarredRepos,
+        },
       ],
       allProjects: ProjectsBackup,
       displayedProjects: ProjectsBackup
@@ -112,6 +121,15 @@ class ProjectsPage extends Component {
 
   RemoveNonHackAWeekRepos(project) {
     return project.description.slice(0, 11).toLowerCase() === "hack-a-week";
+  }
+
+  RemoveNonStarredRepos(project) {
+    if (this.state.filterButtons[6].state === true) {
+      return window.localStorage.getItem(project.name) ? true : false;
+    }
+    else {
+      return this.GetActiveFilterFunction()(project);
+    }
   }
 
   GetActiveSortingFunction() {
@@ -167,6 +185,15 @@ class ProjectsPage extends Component {
       .sort(sort_function)});
   }
 
+  GetActiveFilterFunction() {
+    for (let i = 0; i < this.state.filterButtons.length; i++) {
+      if (this.state.filterButtons[i].state === true) {
+        return this.state.filterButtons[i].updateArgument;
+      }
+    }
+    return this.RemoveNonSourceRepos;
+  }
+
 // ===========================================================================
 // BUTTON STATE FUNCTIONS
 // ===========================================================================
@@ -202,7 +229,12 @@ class ProjectsPage extends Component {
 // ===========================================================================
 
   ReturnModularPageItem(project) {
-    return <Project key={project.name} project={project} />;
+    return <Project
+      key={project.name}
+      project={project}
+      starUpdateFunc={this.UpdateDisplayedProjectsOnFilterButtonClick}
+      starFilterFunc={this.RemoveNonStarredRepos}
+    />;
   }
 
   render() {

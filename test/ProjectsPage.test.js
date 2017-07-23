@@ -6,6 +6,26 @@ import ProjectsBackup from '../src/Content/ProjectsBackup.js';
 // import ReactTestUtils from 'react-dom/test-utils';
 
 beforeEach(function() {
+  // to mock localStorage
+  var localStorageMock = (function() {
+    var store = {};
+    return {
+      getItem: function(key) {
+        return store[key];
+      },
+      setItem: function(key, value) {
+        store[key] = value.toString();
+      },
+      clear: function() {
+        store = {};
+      },
+      removeItem: function(key) {
+        delete store[key];
+      }
+    };
+  })();
+  Object.defineProperty(window, 'localStorage', { value: localStorageMock });
+
   this.projectspage = ReactDOM.render(
     <ProjectsPage />,
     document.body.appendChild(document.createElement('div'))
@@ -89,6 +109,12 @@ it('contains the expected filter buttons', function() {
       'state': false,
       'updateArgument': this.projectspage.RemoveNonHackAWeekRepos,
     },
+    {
+      'label': 'Starred',
+      'updateFunction': this.projectspage.UpdateDisplayedProjectsOnFilterButtonClick,
+      'state': false,
+      'updateArgument': this.projectspage.RemoveNonStarredRepos,
+    },
   ]);
 });
 
@@ -140,6 +166,33 @@ it('has a working filter function to remove non Hack-A-Week repos', function() {
   expect(this.projectspage.RemoveNonHackAWeekRepos(project)).toBe(true);
   project.description = 'Hello world';
   expect(this.projectspage.RemoveNonHackAWeekRepos(project)).toBe(false);
+});
+
+it('has a working filter function to remove non-starred repos', function() {
+  let project = {
+    name: 'example_Project',
+    fork: false,
+  };
+  let buttons = this.projectspage.state.filterButtons;
+
+  // if the active filter is not 'starred', the function should return true
+  // whatever the current active filter should return true
+
+  // this should always return true since the current active function is 'All'
+  expect(this.projectspage.RemoveNonStarredRepos(project)).toBe(true);
+  window.localStorage.setItem(project.name, 'is really cool');
+  expect(this.projectspage.RemoveNonStarredRepos(project)).toBe(true);
+
+  buttons[0].state = false;
+  buttons[6].state = true;
+  // note: setState is asynchronous so this might break at some point
+  this.projectspage.setState({ 'filterButtons': buttons });
+
+  // now, since the active filter is 'Starred', the function should return
+  // false when the item in localStorage is removed
+  expect(this.projectspage.RemoveNonStarredRepos(project)).toBe(true);
+  window.localStorage.removeItem(project.name);
+  expect(this.projectspage.RemoveNonStarredRepos(project)).toBe(false);
 });
 
 it('has a working alphabetical sort function', function() {
