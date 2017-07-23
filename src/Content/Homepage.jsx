@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PageContent.css';
+import './Homepage.css';
 
 class Homepage extends Component {
   render() {
@@ -26,7 +26,7 @@ class Homepage extends Component {
               University, and I built this site because I like
               learning, doing, and creating new things. You can see some of
               my other coding projects under the Projects page, and can read
-              some of my thoughts and writeups under the Essays page.
+              some of my thoughts and writeups under the Blog page.
             </p>
             <p>
               If you want some more info about this site, it's Hack-A-Week 19

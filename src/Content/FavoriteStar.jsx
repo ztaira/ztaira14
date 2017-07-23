@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './FavoriteStar.css';
 
 class FavoriteStar extends Component {
   constructor(props) {

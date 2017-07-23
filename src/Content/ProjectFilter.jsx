@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './PageContent.css';
+import './ProjectFilter.css';
 
 class ProjectFilter extends Component {
   render() {
     return (
       <a
+        className='ProjectFilter'
         onClick={() => {
           this.props.muExBtnFunc(this.props.button.label);
           this.props.button.updateFunction(this.props.button.updateArgument);

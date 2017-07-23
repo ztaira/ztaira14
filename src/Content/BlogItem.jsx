@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './PageContent.css';
+import './BlogItem.css';
 
-class EssaysItem extends Component {
+class BlogItem extends Component {
   render() {
     return (
-      <div className="EssaysItem">
+      <div className="BlogItem">
         <p
-          className="EssaysItemDate">
+          className="BlogItemDate">
           {this.props.entry.create_date}
         </p>
         <Link
-          className="EssaysItemLink"
-          to={"/Essays/" + this.props.entry.file_name.slice(0, -3)}>
+          className="BlogItemLink"
+          to={"/Blog/" + this.props.entry.file_name.slice(0, -3)}>
           {this.props.entry.name}
         </Link>
-        <p className="EssaysItemDescription">
+        <p className="BlogItemDescription">
           {this.props.entry.description}
         </p>
       </div>
@@ -23,4 +23,4 @@ class EssaysItem extends Component {
   }
 }
 
-export default EssaysItem;
+export default BlogItem;

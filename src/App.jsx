@@ -4,7 +4,7 @@ import './App.css';
 import MenuBar from './MenuBar/MenuBar.jsx';
 import Homepage from './Content/Homepage.jsx';
 import ProjectsPage from './Content/ProjectsPage.jsx';
-import EssaysPage from './Content/EssaysPage.jsx';
+import BlogPage from './Content/BlogPage.jsx';
 import Page from './Content/Page.jsx';
 import PageNotFound from './Content/PageNotFound.jsx';
 
@@ -15,7 +15,7 @@ class App extends Component {
       menuitems: [
         'Home',
         'Projects',
-        'Essays',
+        'Blog',
       ],
       sidebaritems: [
         {
@@ -62,7 +62,7 @@ class App extends Component {
     return (
       <Route
         key={entry.file_name}
-        path={"/Essays/" + entry.file_name.slice(0, -3)}
+        path={"/Blog/" + entry.file_name.slice(0, -3)}
         component={() => <Page
           url={url + entry.file_name}
         />}
@@ -80,8 +80,8 @@ class App extends Component {
             <Route path="/Projects" component={ProjectsPage} />
             <Route
               exact
-              path="/Essays"
-              component={() => <EssaysPage
+              path="/Blog"
+              component={() => <BlogPage
                 allEntries={this.state.allEntries}
               />}
             />

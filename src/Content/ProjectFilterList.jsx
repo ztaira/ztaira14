@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectFilter from './ProjectFilter.jsx';
+import './ProjectFilterList.css';
 
 class ProjectFilterList extends Component {
   constructor(props) {

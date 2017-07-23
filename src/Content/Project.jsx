@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FavoriteStar from './FavoriteStar.jsx';
-import './PageContent.css';
+import './Project.css';
 
 class Project extends Component {
   constructor(props) {
