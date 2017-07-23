@@ -1,32 +1,76 @@
 .BlogItem {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  padding: 20px;
+  min-width: 250px;
   flex-wrap: wrap;
-  padding: 0px;
-  min-width: 300px;
-  flex: auto;
-  word-wrap: break-word;
   text-align: left;
+  margin: 0px 0px 20px 0px;
+  background-color: rgb(228, 211, 255);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  justify-content: right;
+  word-wrap: break-word;
   font-family: 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  color: #505050;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.BlogItem div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 20;
+  min-width: 300px;
+}
+
+.BlogItem .PageContent {
+  margin: 20px 0px 20px 0px;
+  max-width: 92%;
+  cursor: default;
+  box-shadow: none;
 }
 
 .BlogItemDate {
   margin: 0px;
   padding: 10px;
+  display: block;
+  float: right;
+  flex-grow: 1;
 }
 
 .BlogItemLink {
   font-weight: bold;
-  color: #0366d6;
+  color: #505050;
   text-align: left;
   padding: 10px;
-  width: 150px;
   background-color: rgba(0, 0, 0, 0);
+  display: block;
+  float: left;
 }
 
 .BlogItemDescription {
   margin: 0px;
   padding: 10px;
   word-wrap: break-word;
+}
+
+.ActiveBlogButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.CloseButton {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  background-color: #b097d8;
+  color: #505050;
+  flex-grow: 1;
+}
+
+
+.BlogItem:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 }

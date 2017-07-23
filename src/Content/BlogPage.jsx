@@ -15,7 +15,9 @@ class BlogPage extends Component {
   render() {
     return (
       <div className="BlogContent">
-        {this.props.allEntries.map(this.ReturnBlogItem)}
+        <div className="FormattingDiv">
+          {this.props.allEntries.map(this.ReturnBlogItem)}
+        </div>
         <div className="RightColumnSpacer" />
       </div>
     );
