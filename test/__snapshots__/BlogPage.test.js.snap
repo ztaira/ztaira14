@@ -1,0 +1,48 @@
+exports[`test has not changed since the last snapshot 1`] = `
+<div
+  className="BlogContent">
+  <div
+    className="FormattingDiv">
+    <a
+      className="BlogItem"
+      onClick={[Function]}>
+      <div
+        className="BlogItemLeftInfo">
+        <div
+          className="BlogItemLink">
+          hello_again_world
+        </div>
+        <p
+          className="BlogItemDescription">
+          Testing
+        </p>
+      </div>
+      <p
+        className="BlogItemDate">
+        2017-05-29
+      </p>
+    </a>
+    <a
+      className="BlogItem"
+      onClick={[Function]}>
+      <div
+        className="BlogItemLeftInfo">
+        <div
+          className="BlogItemLink">
+          hello_world
+        </div>
+        <p
+          className="BlogItemDescription">
+          Testing
+        </p>
+      </div>
+      <p
+        className="BlogItemDate">
+        2017-05-29
+      </p>
+    </a>
+  </div>
+  <div
+    className="RightColumnSpacer" />
+</div>
+`;

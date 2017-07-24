@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Page from './Page.jsx';
+import BlogActiveButtons from './BlogActiveButtons.jsx';
 import './BlogItem.css';
 
 class BlogItem extends Component {
@@ -24,7 +25,7 @@ class BlogItem extends Component {
           className="BlogItem"
           onClick={this.TogglePost}
         >
-          <div>
+          <div className="BlogItemLeftInfo">
             <div className="BlogItemLink">
               {this.props.entry.file_name.slice(0, -3)}
             </div>
@@ -43,35 +44,17 @@ class BlogItem extends Component {
       let url = 'https://raw.githubusercontent.com/ztaira14/journal/master/';
       return (
         <div className="BlogItem" >
-          <div className="ActiveBlogButtons" >
-            <a
-              className="CloseButton"
-              onClick={this.TogglePost}
-            >
-              Close
-            </a>
-            <Link
-              className="CloseButton"
-              to={"/Blog/" + this.props.entry.file_name.slice(0, -3)}
-            >Go To Bookmarkable Page
-            </Link>
-          </div>
+          <BlogActiveButtons
+            togglePost={this.TogglePost}
+            entry={this.props.entry}
+          />
           <Page
             url={url + this.props.entry.file_name}
           />
-          <div className="ActiveBlogButtons" >
-            <a
-              className="CloseButton"
-              onClick={this.TogglePost}
-            >
-              Close
-            </a>
-            <Link
-              className="CloseButton"
-              to={"/Blog/" + this.props.entry.file_name.slice(0, -3)}
-            >Go To Bookmarkable Page
-            </Link>
-          </div>
+          <BlogActiveButtons
+            togglePost={this.TogglePost}
+            entry={this.props.entry}
+          />
         </div>
       );
     }

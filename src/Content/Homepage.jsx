@@ -23,10 +23,10 @@ class Homepage extends Component {
             </p>
             <p>
               My name is Zachary Taira. I'm an EE student at Northeastern
-              University, and I built this site because I like
-              learning, doing, and creating new things. You can see some of
-              my other coding projects under the Projects page, and can read
-              some of my thoughts and writeups under the Blog page.
+              University, and I built this site in order to document my
+              coding journey. You can see some of my other projects
+              under the Projects page, and can read some of my thoughts and
+              writeups under the Blog page.  
             </p>
             <p>
               If you want some more info about this site, it's Hack-A-Week 19

@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   text-align: left;
   margin: 0px 0px 20px 0px;
-  background-color: rgb(228, 211, 255);
+  background-color: #e4d3ff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   justify-content: right;
   word-wrap: break-word;
@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.BlogItem div {
+.BlogItemLeftInfo {
   display: flex;
   flex-direction: column;
   flex-grow: 20;
@@ -25,9 +25,13 @@
 
 .BlogItem .PageContent {
   margin: 20px 0px 20px 0px;
-  max-width: 92%;
+  padding: 0px 5% 0px 5%;
+  width: 92%;
   cursor: default;
   box-shadow: none;
+  max-width: 92%;
+  min-width: 0px;
+  background-color: #e4d3ff;
 }
 
 .BlogItemDate {
@@ -53,23 +57,6 @@
   padding: 10px;
   word-wrap: break-word;
 }
-
-.ActiveBlogButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.CloseButton {
-  display: inline-block;
-  padding: 20px;
-  text-align: center;
-  background-color: #b097d8;
-  color: #505050;
-  flex-grow: 1;
-}
-
 
 .BlogItem:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);

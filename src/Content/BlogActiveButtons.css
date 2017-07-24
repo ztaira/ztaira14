@@ -1,0 +1,26 @@
+.BlogActiveButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.BlogButton {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: #c8aef2;
+  color: #694f91;
+  border: 2px solid #694f91;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.BlogCloseButton {
+  margin: 0px 10px 0px 0px;
+}
+
+.BlogLinkButton {
+  margin: 0px 0px 0px 10px;
+}
+
