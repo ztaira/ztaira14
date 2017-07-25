@@ -1,6 +1,6 @@
 .ProjectContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: 80px 4% 50px 4%;
 }
@@ -8,6 +8,7 @@
 .ProjectList {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
 }
