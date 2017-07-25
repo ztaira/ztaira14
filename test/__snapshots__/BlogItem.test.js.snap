@@ -1,0 +1,21 @@
+exports[`test has not changed since the last snapshot 1`] = `
+<a
+  className="BlogItem"
+  onClick={[Function]}>
+  <div
+    className="BlogItemLeftInfo">
+    <div
+      className="BlogItemLink">
+      It\'s a te
+    </div>
+    <p
+      className="BlogItemDescription">
+      The description, however long, goes here
+    </p>
+  </div>
+  <p
+    className="BlogItemDate">
+    2016-04-10T04:20:26Z
+  </p>
+</a>
+`;
