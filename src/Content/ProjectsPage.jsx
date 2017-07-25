@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './PageContent.css';
 import Project from './Project.jsx';
 import ProjectFilterList from './ProjectFilterList.jsx';
 import ProjectsBackup from './ProjectsBackup.js';
+import './ProjectsPage.css';
 
 class ProjectsPage extends Component {
   constructor(props) {

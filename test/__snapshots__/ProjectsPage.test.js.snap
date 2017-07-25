@@ -4,6 +4,7 @@ exports[`test has not changed since the last snapshot 1`] = `
   <div
     className="ProjectFilters">
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={
         Object {
@@ -14,31 +15,37 @@ exports[`test has not changed since the last snapshot 1`] = `
       All
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       Python
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       JavaScript
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       C++
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       Misc
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       Hack-A-Week
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       Starred
@@ -47,6 +54,7 @@ exports[`test has not changed since the last snapshot 1`] = `
   <div
     className="ProjectFilters">
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={
         Object {
@@ -57,16 +65,19 @@ exports[`test has not changed since the last snapshot 1`] = `
       A-Z
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       Z-A
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       Newest
     </a>
     <a
+      className="ProjectFilter"
       onClick={[Function]}
       style={Object {}}>
       Oldest

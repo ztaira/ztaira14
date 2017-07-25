@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import EssaysPage from '../src/Content/EssaysPage.jsx';
+import BlogPage from '../src/Content/BlogPage.jsx';
 
 it('has not changed since the last snapshot', function() {
-  const essayspage = renderer.create(
+  const blogpage = renderer.create(
     <HashRouter>
-      <EssaysPage allEntries={[
+      <BlogPage allEntries={[
         {
           'name': 'Hello Again, world!',
           'description': 'Testing',
@@ -23,6 +23,6 @@ it('has not changed since the last snapshot', function() {
       ]} />
     </HashRouter>
   );
-  let essayspage_json = essayspage.toJSON();
-  expect(essayspage_json).toMatchSnapshot();
+  let blogpage_json = blogpage.toJSON();
+  expect(blogpage_json).toMatchSnapshot();
 });
