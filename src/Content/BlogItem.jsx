@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Page from './Page.jsx';
 import BlogActiveButtons from './BlogActiveButtons.jsx';
 import './BlogItem.css';
