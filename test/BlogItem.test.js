@@ -1,20 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route, browserHistory, HashRouter, Switch } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import BlogItem from '../src/Content/BlogItem.jsx';
 
-it('has not changed since the last snapshot', () => {
-  let entry = {
+beforeEach(function() {
+  this.entry = {
     'file_name': "It's a test!",
     'description': "The description, however long, goes here",
-    'create_date': '2016-04-10T04:20:26Z'
+    'create_date': '2017-7-25'
   }
-  const blogitem = renderer.create(
-    <BlogItem entry={entry} />
+  this.blogItem = ReactDOM.render(
+    <BlogItem entry={this.entry} openByDefault={false} neverOpen={true}/>,
+    document.body.appendChild(document.createElement('div'))
   );
+});
 
+it('has not changed since the last snapshot - closed blogitem', function() {
+  const blogitem = renderer.create(
+    <BlogItem entry={this.entry} />
+  );
   let blogitem_json = blogitem.toJSON();
   expect(blogitem_json).toMatchSnapshot();
-  
-  // todo: try and toggle the state
+});
+
+it('has not changed since the last snapshot - open blogitem', function() {
+  const blogitem = renderer.create(
+    <HashRouter>
+      <BlogItem entry={this.entry} openByDefault={true}/>
+    </HashRouter>
+  );
+  let blogitem_json = blogitem.toJSON();
+  expect(blogitem_json).toMatchSnapshot();
+});
+
+it('has a function to toggle the active state', function() {
+  expect(this.blogItem.state['active']).toBe(false);
+  this.blogItem.TogglePost();
+  expect(this.blogItem.state['active']).toBe(true);
+});
+
+it('has some sort of loading text', function() {
+  expect(this.blogItem.state['text']).toBe('Loading...');
 });
