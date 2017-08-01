@@ -243,10 +243,12 @@ class ProjectsPage extends Component {
         <ProjectFilterList
           muExBtnFunc={this.ChangeActiveFilterButton}
           buttons={this.state.filterButtons}
+          name={"Filter"}
         />
         <ProjectFilterList
           muExBtnFunc={this.ChangeActiveSortButton}
           buttons={this.state.sortButtons}
+          name={"Sort"}
         />
         <div style={{"height": "20px", "width": "100%"}} />
         <div className="ProjectList">

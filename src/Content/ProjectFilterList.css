@@ -1,9 +1,32 @@
 .ProjectFilters {
-  padding: 5px;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 50%;
-  min-width: 275px;
-  margin: auto;
+  position: fixed;
+  width: 80%;
+  left: 5%;
+  top: 10%;
+  padding: 5%;
+  background-color: #fafafa;
+}
+
+button {
+  background-color: rgb(240, 240, 240);
+  color: rgb(180, 180, 180);
+  border: 2px solid rgb(180, 180, 180);
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  flex: 1 0 auto;
+  cursor: pointer;
+}
+
+.ModalBackground {
+  background-color: rgba(100, 100, 100, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
