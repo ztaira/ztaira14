@@ -2,86 +2,19 @@ exports[`test has not changed since the last snapshot 1`] = `
 <div
   className="ProjectContent">
   <div
-    className="ProjectFilters">
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={
-        Object {
-          "borderColor": "rgb(0, 0, 0)",
-          "color": "rgb(0, 0, 0)",
-        }
-      }>
-      All
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      Python
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      JavaScript
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      C++
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      Misc
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      Hack-A-Week
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      Starred
-    </a>
-  </div>
-  <div
-    className="ProjectFilters">
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={
-        Object {
-          "borderColor": "rgb(0, 0, 0)",
-          "color": "rgb(0, 0, 0)",
-        }
-      }>
-      A-Z
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      Z-A
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      Newest
-    </a>
-    <a
-      className="ProjectFilter"
-      onClick={[Function]}
-      style={Object {}}>
-      Oldest
-    </a>
+    className="ProjectFilterToggles">
+    <div>
+      <button
+        onClick={[Function]}>
+        Filter by: All
+      </button>
+    </div>
+    <div>
+      <button
+        onClick={[Function]}>
+        Sort by: A-Z
+      </button>
+    </div>
   </div>
   <div
     style={

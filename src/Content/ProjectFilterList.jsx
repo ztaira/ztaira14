@@ -18,13 +18,21 @@ class ProjectFilterList extends Component {
     this.setState({'active': false});
   }
 
+  GetActiveButtonName = () => {
+    for (let i = 0; i < this.props.buttons.length; i++) {
+      if (this.props.buttons[i].state === true) {
+        return this.props.buttons[i].label;
+      }
+    }
+  }
+
   render() {
     return (
       <div>
         <button
           onClick={this.ToggleModalOn}
         >
-          {this.props.name}
+          {`${this.props.name} by: ${this.GetActiveButtonName()}`}
         </button>
         {this.state.active ?
           <Modal
