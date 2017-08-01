@@ -12,3 +12,9 @@
   flex-wrap: wrap;
   width: 100%;
 }
+
+.ProjectFilterToggles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

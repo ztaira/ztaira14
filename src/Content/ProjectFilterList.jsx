@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjectFilter from './ProjectFilter.jsx';
+import Modal from './Modal.jsx';
 import './ProjectFilterList.css';
 
 class ProjectFilterList extends Component {
@@ -10,46 +10,30 @@ class ProjectFilterList extends Component {
     };
   }
 
-  ReturnButton = (button) => {
-    return (
-      <ProjectFilter
-        key={button.label}
-        button={button}
-        muExBtnFunc={this.props.muExBtnFunc}
-        modalToggleFunc={this.ToggleModal}
-      />
-    );
+  ToggleModalOn = (e) => {
+    this.setState({'active': true});
   }
 
-  ReturnModal = () => {
-    console.log(this.state.active);
-    if (this.state.active) {
-      return (
-        <div
-          className="ModalBackground"
-          style={{"width": window.innerWidth, "height": window.innerHeight}}
-        >
-          <div className="ProjectFilters">
-            {this.props.buttons.map(this.ReturnButton)}
-          </div>
-        </div>
-      );
-    }
-  }
-
-  ToggleModal = (e) => {
-    this.setState({'active': !this.state.active});
+  ToggleModalOff = () => {
+    this.setState({'active': false});
   }
 
   render() {
     return (
       <div>
         <button
-          onClick={this.ToggleModal}
+          onClick={this.ToggleModalOn}
         >
           {this.props.name}
         </button>
-        {this.ReturnModal()}
+        {this.state.active ?
+          <Modal
+            buttons={this.props.buttons}
+            muExBtnFunc={this.props.muExBtnFunc}
+            modalToggleFunc={this.ToggleModalOff}
+          /> :
+          null
+        }
       </div>
     );
   }
