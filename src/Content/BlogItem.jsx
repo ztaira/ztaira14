@@ -18,7 +18,14 @@ class BlogItem extends Component {
   }
 
   render() {
-    if (!this.state.active) {
+    // openByDefault is necessary for testing snapshots.
+    // this makes sure you can take snapshots without access to TogglePost or
+    // setState or onClick
+    //
+    // neverOpen is necessary for testing functions
+    // it's so you can create a BlogItem and easily get a reference to it without
+    // having to deal with a HashRouter parent context
+    if ((!this.state.active && !this.props.openByDefault) || this.props.neverOpen) {
       return (
         <a
           className="BlogItem"

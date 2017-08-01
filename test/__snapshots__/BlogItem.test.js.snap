@@ -1,0 +1,59 @@
+exports[`test has not changed since the last snapshot - closed blogitem 1`] = `
+<a
+  className="BlogItem"
+  onClick={[Function]}>
+  <div
+    className="BlogItemLeftInfo">
+    <div
+      className="BlogItemLink">
+      It\'s a te
+    </div>
+    <p
+      className="BlogItemDescription">
+      The description, however long, goes here
+    </p>
+  </div>
+  <p
+    className="BlogItemDate">
+    2017-7-25
+  </p>
+</a>
+`;
+
+exports[`test has not changed since the last snapshot - open blogitem 1`] = `
+<div
+  className="BlogItem">
+  <div
+    className="BlogActiveButtons">
+    <a
+      className="BlogCloseButton BlogButton"
+      onClick={[Function]}>
+      Close
+    </a>
+    <a
+      className="BlogLinkButton BlogButton"
+      href="#/Blog/It\'s a te"
+      onClick={[Function]}>
+      Go To Bookmarkable Page
+    </a>
+  </div>
+  <div
+    className="PageContent">
+    Loading
+  </div>
+  <div
+    className="BlogActiveButtons">
+    <a
+      className="BlogCloseButton BlogButton"
+      onClick={[Function]}>
+      Close
+    </a>
+    <a
+      className="BlogLinkButton BlogButton"
+      href="#/Blog/It\'s a te"
+      onClick={[Function]}>
+      Go To Bookmarkable Page
+    </a>
+  </div>
+</div>
+`;
