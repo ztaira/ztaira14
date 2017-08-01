@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import ProjectFilterList from '../src/Content/ProjectFilterList.jsx';
+import ProjectFilterList from '../src/Projects/ProjectFilterList.jsx';
 
 beforeEach(function() {
   let buttons = [

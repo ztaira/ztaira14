@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import FavoriteStar from '../src/Content/FavoriteStar.jsx';
+import FavoriteStar from '../src/Projects/FavoriteStar.jsx';
 
 beforeEach(function() {
   // to mock localStorage

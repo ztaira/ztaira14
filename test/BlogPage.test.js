@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import BlogPage from '../src/Content/BlogPage.jsx';
+import BlogPage from '../src/Blog/BlogPage.jsx';
 
 it('has not changed since the last snapshot', function() {
   const blogpage = renderer.create(
