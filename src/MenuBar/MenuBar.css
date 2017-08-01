@@ -15,17 +15,17 @@
   flex-wrap: wrap;
   justify-content: center;
   font-family: 'Helvetica Nueue', Helvetica, Arial, sans-serif;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #a0a0a0;
   background-color: rgb(255, 255, 255);
 }
 
 .MenuBar a {
+  color: #222222;
   display: block;
-  color: white;
   text-align: center;
   padding: 15px 20px;
   text-decoration: none;
-  color: rgb(34, 34, 34);
+  font-weight: normal;
   background-color: rgb(255, 255, 255);
   cursor: pointer;
 }

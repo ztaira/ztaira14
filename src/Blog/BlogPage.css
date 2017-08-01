@@ -1,8 +1,8 @@
 .BlogContent {
-  margin: 80px 4% 50px 4%;
+  margin: 80px 2% 50px 2%;
   padding: 0px;
   min-width: 250px;
-  width: 92%;
+  width: 96%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

@@ -240,14 +240,18 @@ class ProjectsPage extends Component {
   render() {
     return (
       <div className="ProjectContent">
-        <ProjectFilterList
-          muExBtnFunc={this.ChangeActiveFilterButton}
-          buttons={this.state.filterButtons}
-        />
-        <ProjectFilterList
-          muExBtnFunc={this.ChangeActiveSortButton}
-          buttons={this.state.sortButtons}
-        />
+        <div className="ProjectFilterToggles">
+          <ProjectFilterList
+            muExBtnFunc={this.ChangeActiveFilterButton}
+            buttons={this.state.filterButtons}
+            name={"Filter"}
+          />
+          <ProjectFilterList
+            muExBtnFunc={this.ChangeActiveSortButton}
+            buttons={this.state.sortButtons}
+            name={"Sort"}
+          />
+        </div>
         <div style={{"height": "20px", "width": "100%"}} />
         <div className="ProjectList">
           {this.state.displayedProjects.map(this.ReturnModularPageItem)}

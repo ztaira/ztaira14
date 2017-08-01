@@ -9,9 +9,10 @@
   flex-grow: 1;
   padding: 20px;
   text-align: center;
-  background-color: #d3bbf9;
-  color: #694f91;
-  border: 2px solid #baa1e2;
+  background-color: #fafafa;
+  color: #505050;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
   font-weight: bold;
   text-decoration: none;
 }

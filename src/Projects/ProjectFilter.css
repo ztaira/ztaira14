@@ -1,12 +1,12 @@
 .ProjectFilter {
-  background-color: rgb(240, 240, 240);
-  color: rgb(180, 180, 180);
-  border: 2px solid rgb(180, 180, 180);
+  background-color: #fafafa;
+  border: 1px solid #a0a0a0;
   padding: 15px;
   margin: 5px;
+  flex: 1 0 170px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 4px;
 }

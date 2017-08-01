@@ -9,6 +9,7 @@ class ProjectFilter extends Component {
         onClick={() => {
           this.props.muExBtnFunc(this.props.button.label);
           this.props.button.updateFunction(this.props.button.updateArgument);
+          this.props.modalToggleFunc();
         }}
         style={this.props.button.state ? {
           'borderColor': 'rgb(0, 0, 0)',
