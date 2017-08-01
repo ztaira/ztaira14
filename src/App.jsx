@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Route, browserHistory, HashRouter, Switch } from 'react-router-dom';
 import './App.css';
 import MenuBar from './MenuBar/MenuBar.jsx';
-import Homepage from './Content/Homepage.jsx';
-import ProjectsPage from './Content/ProjectsPage.jsx';
-import BlogPage from './Content/BlogPage.jsx';
-import Page from './Content/Page.jsx';
-import PageNotFound from './Content/PageNotFound.jsx';
+import Homepage from './Home/Homepage.jsx';
+import ProjectsPage from './Projects/ProjectsPage.jsx';
+import BlogPage from './Blog/BlogPage.jsx';
+import Page from './Blog/Page.jsx';
+import PageNotFound from './PageNotFound.jsx';
 
 class App extends Component {
   constructor(props) {
