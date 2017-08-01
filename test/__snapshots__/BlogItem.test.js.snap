@@ -6,7 +6,7 @@ exports[`test has not changed since the last snapshot - closed blogitem 1`] = `
     className="BlogItemLeftInfo">
     <div
       className="BlogItemLink">
-      It\'s a te
+      hello_world
     </div>
     <p
       className="BlogItemDescription">
@@ -32,7 +32,7 @@ exports[`test has not changed since the last snapshot - open blogitem 1`] = `
     </a>
     <a
       className="BlogLinkButton BlogButton"
-      href="#/Blog/It\'s a te"
+      href="#/Blog/hello_world"
       onClick={[Function]}>
       Go To Bookmarkable Page
     </a>
@@ -50,7 +50,7 @@ exports[`test has not changed since the last snapshot - open blogitem 1`] = `
     </a>
     <a
       className="BlogLinkButton BlogButton"
-      href="#/Blog/It\'s a te"
+      href="#/Blog/hello_world"
       onClick={[Function]}>
       Go To Bookmarkable Page
     </a>

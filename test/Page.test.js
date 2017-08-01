@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 import renderer from 'react-test-renderer';
-import Page from '../src/Content/Page.jsx';
+import Page from '../src/Blog/Page.jsx';
 
 beforeEach(function() {
   this.page = ReactDOM.render(

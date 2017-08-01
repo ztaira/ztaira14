@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import Modal from '../src/Content/Modal.jsx';
+import Modal from '../src/Projects/Modal.jsx';
 
 it('has not changed since the last snapshot', () => {
   let buttons = [

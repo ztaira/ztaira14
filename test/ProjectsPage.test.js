@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import ProjectsPage from '../src/Content/ProjectsPage.jsx';
-import ProjectsBackup from '../src/Content/ProjectsBackup.js';
+import ProjectsPage from '../src/Projects/ProjectsPage.jsx';
+import ProjectsBackup from '../src/Projects/ProjectsBackup.js';
 // import ReactTestUtils from 'react-dom/test-utils';
 
 beforeEach(function() {

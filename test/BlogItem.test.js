@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, browserHistory, HashRouter, Switch } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import BlogItem from '../src/Content/BlogItem.jsx';
+import BlogItem from '../src/Blog/BlogItem.jsx';
 
 beforeEach(function() {
   this.entry = {
-    'file_name': "It's a test!",
+    'file_name': "hello_world.md",
     'description': "The description, however long, goes here",
     'create_date': '2017-7-25'
   }

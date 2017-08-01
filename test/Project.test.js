@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import Project from '../src/Content/Project.jsx';
+import Project from '../src/Projects/Project.jsx';
 
 beforeEach(function() {
   var exampleProject = {

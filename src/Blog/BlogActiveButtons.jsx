@@ -14,7 +14,7 @@ class BlogActiveButtons extends Component {
         </a>
         <Link
           className="BlogLinkButton BlogButton"
-          to={"/Blog/" + this.props.entry.file_name.slice(0, -3)}
+          to={`/Blog/${this.props.entry.file_name.slice(0, -3)}`}
         >Go To Bookmarkable Page
         </Link>
       </div>
