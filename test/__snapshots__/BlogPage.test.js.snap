@@ -10,7 +10,7 @@ exports[`test has not changed since the last snapshot 1`] = `
         className="BlogItemLeftInfo">
         <div
           className="BlogItemLink">
-          hello_again_world
+          Hello Again, world!
         </div>
         <p
           className="BlogItemDescription">
@@ -29,7 +29,7 @@ exports[`test has not changed since the last snapshot 1`] = `
         className="BlogItemLeftInfo">
         <div
           className="BlogItemLink">
-          hello_world
+          Hello World
         </div>
         <p
           className="BlogItemDescription">

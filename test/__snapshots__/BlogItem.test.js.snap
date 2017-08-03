@@ -6,7 +6,7 @@ exports[`test has not changed since the last snapshot - closed blogitem 1`] = `
     className="BlogItemLeftInfo">
     <div
       className="BlogItemLink">
-      hello_world
+      Hello, world!
     </div>
     <p
       className="BlogItemDescription">

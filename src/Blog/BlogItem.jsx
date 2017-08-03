@@ -33,7 +33,7 @@ class BlogItem extends Component {
         >
           <div className="BlogItemLeftInfo">
             <div className="BlogItemLink">
-              {this.props.entry.file_name.slice(0, -3)}
+              {this.props.entry.name}
             </div>
             <p className="BlogItemDescription">
               {this.props.entry.description}

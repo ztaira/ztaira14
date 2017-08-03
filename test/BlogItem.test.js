@@ -6,6 +6,7 @@ import BlogItem from '../src/Blog/BlogItem.jsx';
 
 beforeEach(function() {
   this.entry = {
+    'name': "Hello, world!",
     'file_name': "hello_world.md",
     'description': "The description, however long, goes here",
     'create_date': '2017-7-25'
