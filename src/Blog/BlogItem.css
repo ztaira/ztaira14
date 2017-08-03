@@ -1,6 +1,7 @@
 .BlogItem {
   display: flex;
   flex-direction: row;
+  justify-content: right;
   padding: 20px;
   min-width: 250px;
   flex-wrap: wrap;
@@ -8,7 +9,6 @@
   margin: 0px 0px 20px 0px;
   background-color: #fafafa;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  justify-content: right;
   word-wrap: break-word;
   font-family: 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   color: #505050;
@@ -21,7 +21,6 @@
   display: flex;
   flex-direction: column;
   flex-grow: 20;
-  min-width: 300px;
 }
 
 .BlogItem .PageContent {
@@ -42,6 +41,7 @@
   display: block;
   float: right;
   flex-grow: 1;
+  max-width: 90px;
 }
 
 .BlogItemLink {
