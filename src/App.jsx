@@ -75,7 +75,7 @@ class App extends Component {
         <div className="App">
           <MenuBar menuitems={this.state.menuitems} />
           <Switch>
-            <Route exact path="/" component={Homepage} />
+            <Route exact path="/" component={ProjectsPage} />
             <Route path="/Home" component={Homepage} />
             <Route path="/Projects" component={ProjectsPage} />
             <Route

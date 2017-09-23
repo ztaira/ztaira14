@@ -17,21 +17,9 @@ class ProjectsPage extends Component {
     this.state = {
       sortButtons: [
         {
-          'label': 'A-Z',
-          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
-          'state': true,
-          'updateArgument': this.SortFunctionAlphabeticalByName,
-        },
-        {
-          'label': 'Z-A',
-          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
-          'state': false,
-          'updateArgument': this.SortFunctionReverseAlphabeticalByName,
-        },
-        {
           'label': 'Newest',
           'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
-          'state': false,
+          'state': true,
           'updateArgument': this.SortFunctionNewestDateFirst,
         },
         {
@@ -39,6 +27,18 @@ class ProjectsPage extends Component {
           'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
           'state': false,
           'updateArgument': this.SortFunctionOldestDateFirst,
+        },
+        {
+          'label': 'A-Z',
+          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
+          'state': false,
+          'updateArgument': this.SortFunctionAlphabeticalByName,
+        },
+        {
+          'label': 'Z-A',
+          'updateFunction': this.UpdateDisplayedProjectsOnSortButtonClick,
+          'state': false,
+          'updateArgument': this.SortFunctionReverseAlphabeticalByName,
         },
       ],
       filterButtons: [
@@ -88,7 +88,7 @@ class ProjectsPage extends Component {
       allProjects: ProjectsBackup,
       displayedProjects: ProjectsBackup
         .filter(this.RemoveNonSourceRepos)
-        .sort(this.SortFunctionAlphabeticalByName),
+        .sort(this.SortFunctionNewestDateFirst),
     }
   }
 

@@ -2,7 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import App from '../src/App.jsx';
-// import ReactTestUtils from 'react-dom/test-utils';
+
+beforeEach(function() {
+  // to mock localStorage
+  var localStorageMock = (function() {
+    var store = {};
+    return {
+      getItem: function(key) {
+        return store[key];
+      },
+      setItem: function(key, value) {
+        store[key] = value.toString();
+      },
+      clear: function() {
+        store = {};
+      },
+      removeItem: function(key) {
+        delete store[key];
+      }
+    };
+  })();
+  Object.defineProperty(window, 'localStorage', { value: localStorageMock });
+});
 
 it('has not changed since the last snapshot', () => {
   const app = renderer.create(

@@ -14,7 +14,7 @@ class Homepage extends Component {
             />
             <h1>Zachary Taira</h1>
             <p>zach.taira@gmail.com</p>
-            <p>BS/MS at NEU</p>
+            <p>EE at NEU</p>
             <div className="RightColumnSpacer" />
           </div>
           <div className="Intro">

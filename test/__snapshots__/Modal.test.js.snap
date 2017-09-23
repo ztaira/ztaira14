@@ -11,7 +11,7 @@ exports[`test has not changed since the last snapshot 1`] = `
     className="ProjectFilterBoundingBox">
     <div
       className="ProjectFilters">
-      <a
+      <button
         className="ProjectFilter"
         onClick={[Function]}
         style={
@@ -21,25 +21,25 @@ exports[`test has not changed since the last snapshot 1`] = `
           }
         }>
         A-Z
-      </a>
-      <a
+      </button>
+      <button
         className="ProjectFilter"
         onClick={[Function]}
         style={Object {}}>
         Z-A
-      </a>
-      <a
+      </button>
+      <button
         className="ProjectFilter"
         onClick={[Function]}
         style={Object {}}>
         Newest
-      </a>
-      <a
+      </button>
+      <button
         className="ProjectFilter"
         onClick={[Function]}
         style={Object {}}>
         Oldest
-      </a>
+      </button>
     </div>
   </div>
 </div>

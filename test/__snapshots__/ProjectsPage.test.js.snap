@@ -12,7 +12,7 @@ exports[`test has not changed since the last snapshot 1`] = `
     <div>
       <button
         onClick={[Function]}>
-        Sort by: A-Z
+        Sort by: Newest
       </button>
     </div>
   </div>
@@ -25,6 +25,144 @@ exports[`test has not changed since the last snapshot 1`] = `
     } />
   <div
     className="ProjectList">
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/ztaira14.github.io">
+          ztaira14.github.io
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 19: A personal site built with React
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          JavaScript
+        </span>
+        <span
+          className="ProjectDate">
+          6/4/2017
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/journal">
+          journal
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        A public journal
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage" />
+        <span
+          className="ProjectDate">
+          5/29/2017
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/ztaira14">
+          ztaira14
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 19: The code behind the personal site I built with React
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          JavaScript
+        </span>
+        <span
+          className="ProjectDate">
+          5/15/2017
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#aed6f1",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/pretty-reqs">
+          pretty-reqs
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 18: A plain text graph editor, written with react. 
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          JavaScript
+        </span>
+        <span
+          className="ProjectDate">
+          4/5/2017
+        </span>
+      </div>
+    </div>
     <div
       className="Project"
       onClick={[Function]}
@@ -57,76 +195,6 @@ exports[`test has not changed since the last snapshot 1`] = `
         <span
           className="ProjectDate">
           3/19/2017
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f9e79f",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/absolutely_nothing">
-          absolutely_nothing
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        The only code that never breaks. Ever. http://ztaira14.github.io/absolutely_nothing
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Python
-        </span>
-        <span
-          className="ProjectDate">
-          4/10/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f9e79f",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/aes_python">
-          aes_python
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 1: An attempt at implementing the AES in python, for funsies.
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Python
-        </span>
-        <span
-          className="ProjectDate">
-          7/3/2016
         </span>
       </div>
     </div>
@@ -170,216 +238,6 @@ exports[`test has not changed since the last snapshot 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "backgroundColor": "#a9dfbf",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/donkey.zach">
-          donkey.zach
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 3: ASCII racing game inspired by the legendary DONKEY.BAS.
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          C++
-        </span>
-        <span
-          className="ProjectDate">
-          7/19/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f5b7b1",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/dotfiles">
-          dotfiles
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Everything I need to to set up my personal coding environment. 
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Vim script
-        </span>
-        <span
-          className="ProjectDate">
-          3/29/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f9e79f",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/Email_Sender">
-          Email_Sender
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Small email sender in Tkinter. Reads default email from a text file. Uses gmail. 
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Python
-        </span>
-        <span
-          className="ProjectDate">
-          3/4/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f9e79f",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/evil_maid_suite">
-          evil_maid_suite
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 10: Data visualization on the time I keylogged myself
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Python
-        </span>
-        <span
-          className="ProjectDate">
-          9/23/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f9e79f",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/fb_creeper">
-          fb_creeper
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 13: Python script to programmatically watch fb chat for you
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Python
-        </span>
-        <span
-          className="ProjectDate">
-          11/26/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#a9dfbf",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/flappy_term">
-          flappy_term
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 4: ASCII Flappy Bird clone using ncurses. 
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          C++
-        </span>
-        <span
-          className="ProjectDate">
-          7/30/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
           "backgroundColor": "#aed6f1",
         }
       }>
@@ -407,74 +265,6 @@ exports[`test has not changed since the last snapshot 1`] = `
         <span
           className="ProjectDate">
           1/25/2017
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f5b7b1",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/hackaweek">
-          hackaweek
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 8.5: An example skeleton for all my hack-a-weeks. 
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage" />
-        <span
-          className="ProjectDate">
-          9/6/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#aed6f1",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/HighChartsTest">
-          HighChartsTest
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        A graph using highcharts
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          JavaScript
-        </span>
-        <span
-          className="ProjectDate">
-          2/26/2016
         </span>
       </div>
     </div>
@@ -524,6 +314,41 @@ exports[`test has not changed since the last snapshot 1`] = `
       <div>
         <a
           className="ProjectLink"
+          href="https://github.com/ztaira14/fb_creeper">
+          fb_creeper
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 13: Python script to programmatically watch fb chat for you
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          11/26/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
           href="https://github.com/ztaira14/hub_where">
           hub_where
         </a>
@@ -553,82 +378,14 @@ exports[`test has not changed since the last snapshot 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "backgroundColor": "#f5b7b1",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/journal">
-          journal
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        A public journal
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage" />
-        <span
-          className="ProjectDate">
-          5/29/2017
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#aed6f1",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/JSTest">
-          JSTest
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        This test bounces a ball.
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          JavaScript
-        </span>
-        <span
-          className="ProjectDate">
-          2/26/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
           "backgroundColor": "#f9e79f",
         }
       }>
       <div>
         <a
           className="ProjectLink"
-          href="https://github.com/ztaira14/myhistory">
-          myhistory
+          href="https://github.com/ztaira14/evil_maid_suite">
+          evil_maid_suite
         </a>
         <span
           className="favorite"
@@ -638,7 +395,7 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
       <p
         className="ProjectParagraph">
-        Small wrapper to make using IDLE better. 
+        Hack-A-Week 10: Data visualization on the time I keylogged myself
       </p>
       <div>
         <span
@@ -647,147 +404,7 @@ exports[`test has not changed since the last snapshot 1`] = `
         </span>
         <span
           className="ProjectDate">
-          2/17/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#aed6f1",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/pretty-reqs">
-          pretty-reqs
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 18: A plain text graph editor, written with react. 
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          JavaScript
-        </span>
-        <span
-          className="ProjectDate">
-          4/5/2017
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#a9dfbf",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/python_flow">
-          python_flow
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        Hack-A-Week 2: A python flow visualizer in c++. Inspired by git log --graph.
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          C++
-        </span>
-        <span
-          className="ProjectDate">
-          7/15/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f9e79f",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/PythonGame">
-          PythonGame
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        It\'s a bullet hell game in Python. It\'s pretty slow when too many objects are on the screen. Uses tkinter.
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Python
-        </span>
-        <span
-          className="ProjectDate">
-          3/4/2016
-        </span>
-      </div>
-    </div>
-    <div
-      className="Project"
-      onClick={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#f9e79f",
-        }
-      }>
-      <div>
-        <a
-          className="ProjectLink"
-          href="https://github.com/ztaira14/RubiksGUI">
-          RubiksGUI
-        </a>
-        <span
-          className="favorite"
-          onClick={[Function]}>
-          ☆
-        </span>
-      </div>
-      <p
-        className="ProjectParagraph">
-        A rubiks cube, implemented in tkinter. Operational via button input or key press. 
-      </p>
-      <div>
-        <span
-          className="ProjectLanguage">
-          Python
-        </span>
-        <span
-          className="ProjectDate">
-          3/4/2016
+          9/23/2016
         </span>
       </div>
     </div>
@@ -831,14 +448,14 @@ exports[`test has not changed since the last snapshot 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "backgroundColor": "#f9e79f",
+          "backgroundColor": "#f5b7b1",
         }
       }>
       <div>
         <a
           className="ProjectLink"
-          href="https://github.com/ztaira14/TwitterBot">
-          TwitterBot
+          href="https://github.com/ztaira14/hackaweek">
+          hackaweek
         </a>
         <span
           className="favorite"
@@ -848,16 +465,84 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
       <p
         className="ProjectParagraph">
-        My first TwitterBot! :D
+        Hack-A-Week 8.5: An example skeleton for all my hack-a-weeks. 
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage" />
+        <span
+          className="ProjectDate">
+          9/6/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/zachs_resume">
+          zachs_resume
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 8: My resume in LaTeX
       </p>
       <div>
         <span
           className="ProjectLanguage">
-          Python
+          TeX
         </span>
         <span
           className="ProjectDate">
-          2/29/2016
+          9/6/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f5b7b1",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/whiz">
+          whiz
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        A bookmark function for the terminal, because \'cd\' is too slow. 
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Shell
+        </span>
+        <span
+          className="ProjectDate">
+          8/30/2016
         </span>
       </div>
     </div>
@@ -936,14 +621,14 @@ exports[`test has not changed since the last snapshot 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "backgroundColor": "#f5b7b1",
+          "backgroundColor": "#a9dfbf",
         }
       }>
       <div>
         <a
           className="ProjectLink"
-          href="https://github.com/ztaira14/whiz">
-          whiz
+          href="https://github.com/ztaira14/flappy_term">
+          flappy_term
         </a>
         <span
           className="favorite"
@@ -953,16 +638,156 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
       <p
         className="ProjectParagraph">
-        A bookmark function for the terminal, because \'cd\' is too slow. 
+        Hack-A-Week 4: ASCII Flappy Bird clone using ncurses. 
       </p>
       <div>
         <span
           className="ProjectLanguage">
-          Shell
+          C++
         </span>
         <span
           className="ProjectDate">
-          8/30/2016
+          7/30/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#a9dfbf",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/donkey.zach">
+          donkey.zach
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 3: ASCII racing game inspired by the legendary DONKEY.BAS.
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          C++
+        </span>
+        <span
+          className="ProjectDate">
+          7/19/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#a9dfbf",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/python_flow">
+          python_flow
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 2: A python flow visualizer in c++. Inspired by git log --graph.
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          C++
+        </span>
+        <span
+          className="ProjectDate">
+          7/15/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/aes_python">
+          aes_python
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Hack-A-Week 1: An attempt at implementing the AES in python, for funsies.
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          7/3/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/absolutely_nothing">
+          absolutely_nothing
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        The only code that never breaks. Ever. http://ztaira14.github.io/absolutely_nothing
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          4/10/2016
         </span>
       </div>
     </div>
@@ -977,8 +802,8 @@ exports[`test has not changed since the last snapshot 1`] = `
       <div>
         <a
           className="ProjectLink"
-          href="https://github.com/ztaira14/zachs_resume">
-          zachs_resume
+          href="https://github.com/ztaira14/dotfiles">
+          dotfiles
         </a>
         <span
           className="favorite"
@@ -988,16 +813,156 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
       <p
         className="ProjectParagraph">
-        Hack-A-Week 8: My resume in LaTeX
+        Everything I need to to set up my personal coding environment. 
       </p>
       <div>
         <span
           className="ProjectLanguage">
-          TeX
+          Vim script
         </span>
         <span
           className="ProjectDate">
-          9/6/2016
+          3/29/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/RubiksGUI">
+          RubiksGUI
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        A rubiks cube, implemented in tkinter. Operational via button input or key press. 
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          3/4/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/PythonGame">
+          PythonGame
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        It\'s a bullet hell game in Python. It\'s pretty slow when too many objects are on the screen. Uses tkinter.
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          3/4/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/Email_Sender">
+          Email_Sender
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Small email sender in Tkinter. Reads default email from a text file. Uses gmail. 
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          3/4/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/TwitterBot">
+          TwitterBot
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        My first TwitterBot! :D
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          2/29/2016
         </span>
       </div>
     </div>
@@ -1012,8 +977,8 @@ exports[`test has not changed since the last snapshot 1`] = `
       <div>
         <a
           className="ProjectLink"
-          href="https://github.com/ztaira14/ztaira14">
-          ztaira14
+          href="https://github.com/ztaira14/HighChartsTest">
+          HighChartsTest
         </a>
         <span
           className="favorite"
@@ -1023,7 +988,7 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
       <p
         className="ProjectParagraph">
-        Hack-A-Week 19: The code behind the personal site I built with React
+        A graph using highcharts
       </p>
       <div>
         <span
@@ -1032,7 +997,7 @@ exports[`test has not changed since the last snapshot 1`] = `
         </span>
         <span
           className="ProjectDate">
-          5/15/2017
+          2/26/2016
         </span>
       </div>
     </div>
@@ -1047,8 +1012,8 @@ exports[`test has not changed since the last snapshot 1`] = `
       <div>
         <a
           className="ProjectLink"
-          href="https://github.com/ztaira14/ztaira14.github.io">
-          ztaira14.github.io
+          href="https://github.com/ztaira14/JSTest">
+          JSTest
         </a>
         <span
           className="favorite"
@@ -1058,7 +1023,7 @@ exports[`test has not changed since the last snapshot 1`] = `
       </div>
       <p
         className="ProjectParagraph">
-        Hack-A-Week 19: A personal site built with React
+        This test bounces a ball.
       </p>
       <div>
         <span
@@ -1067,7 +1032,42 @@ exports[`test has not changed since the last snapshot 1`] = `
         </span>
         <span
           className="ProjectDate">
-          6/4/2017
+          2/26/2016
+        </span>
+      </div>
+    </div>
+    <div
+      className="Project"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#f9e79f",
+        }
+      }>
+      <div>
+        <a
+          className="ProjectLink"
+          href="https://github.com/ztaira14/myhistory">
+          myhistory
+        </a>
+        <span
+          className="favorite"
+          onClick={[Function]}>
+          ☆
+        </span>
+      </div>
+      <p
+        className="ProjectParagraph">
+        Small wrapper to make using IDLE better. 
+      </p>
+      <div>
+        <span
+          className="ProjectLanguage">
+          Python
+        </span>
+        <span
+          className="ProjectDate">
+          2/17/2016
         </span>
       </div>
     </div>

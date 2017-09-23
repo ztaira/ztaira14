@@ -44,21 +44,9 @@ it('contains the expected sort buttons', function() {
   expect(this.projectspage.state.sortButtons).toEqual(
     [
       {
-        'label': 'A-Z',
-        'updateFunction': this.projectspage.UpdateDisplayedProjectsOnSortButtonClick,
-        'state': true,
-        'updateArgument': this.projectspage.SortFunctionAlphabeticalByName,
-      },
-      {
-        'label': 'Z-A',
-        'updateFunction': this.projectspage.UpdateDisplayedProjectsOnSortButtonClick,
-        'state': false,
-        'updateArgument': this.projectspage.SortFunctionReverseAlphabeticalByName,
-      },
-      {
         'label': 'Newest',
         'updateFunction': this.projectspage.UpdateDisplayedProjectsOnSortButtonClick,
-        'state': false,
+        'state': true,
         'updateArgument': this.projectspage.SortFunctionNewestDateFirst,
       },
       {
@@ -66,6 +54,18 @@ it('contains the expected sort buttons', function() {
         'updateFunction': this.projectspage.UpdateDisplayedProjectsOnSortButtonClick,
         'state': false,
         'updateArgument': this.projectspage.SortFunctionOldestDateFirst,
+      },
+      {
+        'label': 'A-Z',
+        'updateFunction': this.projectspage.UpdateDisplayedProjectsOnSortButtonClick,
+        'state': false,
+        'updateArgument': this.projectspage.SortFunctionAlphabeticalByName,
+      },
+      {
+        'label': 'Z-A',
+        'updateFunction': this.projectspage.UpdateDisplayedProjectsOnSortButtonClick,
+        'state': false,
+        'updateArgument': this.projectspage.SortFunctionReverseAlphabeticalByName,
       },
     ]);
 });
@@ -278,7 +278,7 @@ it('has a working function to change the active sort button', function() {
 });
 
 it('has a working function to get the active sorting function', function() {
-  expect(this.projectspage.SortFunctionAlphabeticalByName)
+  expect(this.projectspage.SortFunctionNewestDateFirst)
     .toBe(this.projectspage.GetActiveSortingFunction());
   for (let i = 0; i < this.projectspage.state.sortButtons.length; i++) {
     this.projectspage.ChangeActiveSortButton(this.projectspage.state.sortButtons[i].label);
