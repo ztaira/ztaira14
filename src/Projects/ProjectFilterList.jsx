@@ -15,7 +15,6 @@ class ProjectFilterList extends Component {
   }
 
   ToggleModalOff = () => {
-    console.log('off');
     this.setState({'active': false});
     let thisButton = document.getElementById(this.props.name);
     thisButton.focus();
