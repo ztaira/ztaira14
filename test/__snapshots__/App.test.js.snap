@@ -2,7 +2,8 @@ exports[`test has not changed since the last snapshot 1`] = `
 <div
   className="App">
   <ul
-    className="MenuBar">
+    className="MenuBar"
+    role="navigation">
     <li>
       <a
         href="#/Home"
@@ -26,20 +27,146 @@ exports[`test has not changed since the last snapshot 1`] = `
     </li>
   </ul>
   <div
-    className="ProjectContent">
+    className="ProjectContent"
+    role="main">
     <div
       className="ProjectFilterToggles">
       <div>
         <button
+          aria-haspopup={true}
+          id="Filter"
           onClick={[Function]}>
           Filter by: All
         </button>
+        <div
+          className="ModalBackground"
+          style={
+            Object {
+              "display": "none",
+              "height": 768,
+              "width": 1024,
+            }
+          }>
+          <div
+            className="ProjectFilterBoundingBox">
+            <div
+              className="ProjectFilters">
+              <button
+                className="ProjectFilter"
+                id="All"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#666666",
+                    "borderColor": "#666666",
+                    "color": "#ffffff",
+                  }
+                }>
+                All
+              </button>
+              <button
+                className="ProjectFilter"
+                id="Python"
+                onClick={[Function]}
+                style={Object {}}>
+                Python
+              </button>
+              <button
+                className="ProjectFilter"
+                id="JavaScript"
+                onClick={[Function]}
+                style={Object {}}>
+                JavaScript
+              </button>
+              <button
+                className="ProjectFilter"
+                id="C++"
+                onClick={[Function]}
+                style={Object {}}>
+                C++
+              </button>
+              <button
+                className="ProjectFilter"
+                id="Misc"
+                onClick={[Function]}
+                style={Object {}}>
+                Misc
+              </button>
+              <button
+                className="ProjectFilter"
+                id="Hack-A-Week"
+                onClick={[Function]}
+                style={Object {}}>
+                Hack-A-Week
+              </button>
+              <button
+                className="ProjectFilter"
+                id="Starred"
+                onClick={[Function]}
+                style={Object {}}>
+                Starred
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
         <button
+          aria-haspopup={true}
+          id="Sort"
           onClick={[Function]}>
           Sort by: Newest
         </button>
+        <div
+          className="ModalBackground"
+          style={
+            Object {
+              "display": "none",
+              "height": 768,
+              "width": 1024,
+            }
+          }>
+          <div
+            className="ProjectFilterBoundingBox">
+            <div
+              className="ProjectFilters">
+              <button
+                className="ProjectFilter"
+                id="Newest"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#666666",
+                    "borderColor": "#666666",
+                    "color": "#ffffff",
+                  }
+                }>
+                Newest
+              </button>
+              <button
+                className="ProjectFilter"
+                id="Oldest"
+                onClick={[Function]}
+                style={Object {}}>
+                Oldest
+              </button>
+              <button
+                className="ProjectFilter"
+                id="A-Z"
+                onClick={[Function]}
+                style={Object {}}>
+                A-Z
+              </button>
+              <button
+                className="ProjectFilter"
+                id="Z-A"
+                onClick={[Function]}
+                style={Object {}}>
+                Z-A
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -62,7 +189,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/ztaira14.github.io">
+            href="https://github.com/ztaira14/ztaira14.github.io"
+            onClick={[Function]}>
             ztaira14.github.io
           </a>
           <span
@@ -97,7 +225,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/journal">
+            href="https://github.com/ztaira14/journal"
+            onClick={[Function]}>
             journal
           </a>
           <span
@@ -130,7 +259,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/ztaira14">
+            href="https://github.com/ztaira14/ztaira14"
+            onClick={[Function]}>
             ztaira14
           </a>
           <span
@@ -165,7 +295,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/pretty-reqs">
+            href="https://github.com/ztaira14/pretty-reqs"
+            onClick={[Function]}>
             pretty-reqs
           </a>
           <span
@@ -200,7 +331,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/abacus">
+            href="https://github.com/ztaira14/abacus"
+            onClick={[Function]}>
             abacus
           </a>
           <span
@@ -235,7 +367,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/bsmsViz">
+            href="https://github.com/ztaira14/bsmsViz"
+            onClick={[Function]}>
             bsmsViz
           </a>
           <span
@@ -270,7 +403,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/gitbub">
+            href="https://github.com/ztaira14/gitbub"
+            onClick={[Function]}>
             gitbub
           </a>
           <span
@@ -305,7 +439,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/httplescripts">
+            href="https://github.com/ztaira14/httplescripts"
+            onClick={[Function]}>
             httplescripts
           </a>
           <span
@@ -340,7 +475,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/fb_creeper">
+            href="https://github.com/ztaira14/fb_creeper"
+            onClick={[Function]}>
             fb_creeper
           </a>
           <span
@@ -375,7 +511,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/hub_where">
+            href="https://github.com/ztaira14/hub_where"
+            onClick={[Function]}>
             hub_where
           </a>
           <span
@@ -410,7 +547,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/evil_maid_suite">
+            href="https://github.com/ztaira14/evil_maid_suite"
+            onClick={[Function]}>
             evil_maid_suite
           </a>
           <span
@@ -445,7 +583,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/souper_trawler">
+            href="https://github.com/ztaira14/souper_trawler"
+            onClick={[Function]}>
             souper_trawler
           </a>
           <span
@@ -480,7 +619,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/hackaweek">
+            href="https://github.com/ztaira14/hackaweek"
+            onClick={[Function]}>
             hackaweek
           </a>
           <span
@@ -513,7 +653,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/zachs_resume">
+            href="https://github.com/ztaira14/zachs_resume"
+            onClick={[Function]}>
             zachs_resume
           </a>
           <span
@@ -548,7 +689,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/whiz">
+            href="https://github.com/ztaira14/whiz"
+            onClick={[Function]}>
             whiz
           </a>
           <span
@@ -583,7 +725,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/uku_tabs">
+            href="https://github.com/ztaira14/uku_tabs"
+            onClick={[Function]}>
             uku_tabs
           </a>
           <span
@@ -618,7 +761,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/vim_notes">
+            href="https://github.com/ztaira14/vim_notes"
+            onClick={[Function]}>
             vim_notes
           </a>
           <span
@@ -653,7 +797,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/flappy_term">
+            href="https://github.com/ztaira14/flappy_term"
+            onClick={[Function]}>
             flappy_term
           </a>
           <span
@@ -688,7 +833,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/donkey.zach">
+            href="https://github.com/ztaira14/donkey.zach"
+            onClick={[Function]}>
             donkey.zach
           </a>
           <span
@@ -723,7 +869,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/python_flow">
+            href="https://github.com/ztaira14/python_flow"
+            onClick={[Function]}>
             python_flow
           </a>
           <span
@@ -758,7 +905,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/aes_python">
+            href="https://github.com/ztaira14/aes_python"
+            onClick={[Function]}>
             aes_python
           </a>
           <span
@@ -793,7 +941,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/absolutely_nothing">
+            href="https://github.com/ztaira14/absolutely_nothing"
+            onClick={[Function]}>
             absolutely_nothing
           </a>
           <span
@@ -828,7 +977,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/dotfiles">
+            href="https://github.com/ztaira14/dotfiles"
+            onClick={[Function]}>
             dotfiles
           </a>
           <span
@@ -863,7 +1013,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/RubiksGUI">
+            href="https://github.com/ztaira14/RubiksGUI"
+            onClick={[Function]}>
             RubiksGUI
           </a>
           <span
@@ -898,7 +1049,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/PythonGame">
+            href="https://github.com/ztaira14/PythonGame"
+            onClick={[Function]}>
             PythonGame
           </a>
           <span
@@ -933,7 +1085,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/Email_Sender">
+            href="https://github.com/ztaira14/Email_Sender"
+            onClick={[Function]}>
             Email_Sender
           </a>
           <span
@@ -968,7 +1121,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/TwitterBot">
+            href="https://github.com/ztaira14/TwitterBot"
+            onClick={[Function]}>
             TwitterBot
           </a>
           <span
@@ -1003,7 +1157,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/HighChartsTest">
+            href="https://github.com/ztaira14/HighChartsTest"
+            onClick={[Function]}>
             HighChartsTest
           </a>
           <span
@@ -1038,7 +1193,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/JSTest">
+            href="https://github.com/ztaira14/JSTest"
+            onClick={[Function]}>
             JSTest
           </a>
           <span
@@ -1073,7 +1229,8 @@ exports[`test has not changed since the last snapshot 1`] = `
         <div>
           <a
             className="ProjectLink"
-            href="https://github.com/ztaira14/myhistory">
+            href="https://github.com/ztaira14/myhistory"
+            onClick={[Function]}>
             myhistory
           </a>
           <span

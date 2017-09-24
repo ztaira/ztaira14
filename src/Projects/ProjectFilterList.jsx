@@ -10,12 +10,15 @@ class ProjectFilterList extends Component {
     };
   }
 
-  ToggleModalOn = (e) => {
-    this.setState({'active': true});
+  ToggleModalOn = () => {
+    this.setState({'active': !this.state.active});
   }
 
   ToggleModalOff = () => {
+    console.log('off');
     this.setState({'active': false});
+    let thisButton = document.getElementById(this.props.name);
+    thisButton.focus();
   }
 
   GetActiveButtonName = () => {
@@ -30,18 +33,18 @@ class ProjectFilterList extends Component {
     return (
       <div>
         <button
+          id={this.props.name}
           onClick={this.ToggleModalOn}
+          aria-haspopup={true}
         >
           {`${this.props.name} by: ${this.GetActiveButtonName()}`}
         </button>
-        {this.state.active ?
-          <Modal
-            buttons={this.props.buttons}
-            muExBtnFunc={this.props.muExBtnFunc}
-            modalToggleFunc={this.ToggleModalOff}
-          /> :
-          null
-        }
+        <Modal
+          buttons={this.props.buttons}
+          muExBtnFunc={this.props.muExBtnFunc}
+          modalToggleFunc={this.ToggleModalOff}
+          active={this.state.active}
+        />
       </div>
     );
   }

@@ -5,6 +5,7 @@ class ProjectFilter extends Component {
   render() {
     return (
       <button
+        id={this.props.button.label}
         className="ProjectFilter"
         onClick={() => {
           this.props.muExBtnFunc(this.props.button.label);
@@ -12,8 +13,9 @@ class ProjectFilter extends Component {
           this.props.modalToggleFunc();
         }}
         style={this.props.button.state ? {
-          "borderColor": "rgb(0, 0, 0)",
-          "color": "rgb(0, 0, 0)",
+          "borderColor": "#666666",
+          "color": "#ffffff",
+          "backgroundColor": "#666666",
         } : {}}>
         {this.props.button.label}
       </button>

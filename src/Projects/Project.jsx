@@ -40,7 +40,11 @@ class Project extends Component {
         onClick={this.GoToUrl}
       >
         <div>
-          <a className="ProjectLink" href={this.props.project.html_url}>
+          <a
+            className="ProjectLink"
+            href={this.props.project.html_url}
+            onClick={(e) => { e.preventDefault(); }}
+          >
             {this.props.project.name}
           </a>
           <FavoriteStar

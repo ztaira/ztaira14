@@ -239,7 +239,7 @@ class ProjectsPage extends Component {
 
   render() {
     return (
-      <div className="ProjectContent">
+      <div className="ProjectContent" role="main">
         <div className="ProjectFilterToggles">
           <ProjectFilterList
             muExBtnFunc={this.ChangeActiveFilterButton}

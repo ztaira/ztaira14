@@ -3,6 +3,7 @@ exports[`test has not changed since the last snapshot 1`] = `
   className="ModalBackground"
   style={
     Object {
+      "display": "none",
       "height": 768,
       "width": 1024,
     }
@@ -13,29 +14,34 @@ exports[`test has not changed since the last snapshot 1`] = `
       className="ProjectFilters">
       <button
         className="ProjectFilter"
+        id="A-Z"
         onClick={[Function]}
         style={
           Object {
-            "borderColor": "rgb(0, 0, 0)",
-            "color": "rgb(0, 0, 0)",
+            "backgroundColor": "#666666",
+            "borderColor": "#666666",
+            "color": "#ffffff",
           }
         }>
         A-Z
       </button>
       <button
         className="ProjectFilter"
+        id="Z-A"
         onClick={[Function]}
         style={Object {}}>
         Z-A
       </button>
       <button
         className="ProjectFilter"
+        id="Newest"
         onClick={[Function]}
         style={Object {}}>
         Newest
       </button>
       <button
         className="ProjectFilter"
+        id="Oldest"
         onClick={[Function]}
         style={Object {}}>
         Oldest
