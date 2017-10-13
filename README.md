@@ -26,5 +26,3 @@ when I artificially throttled the network via Chrome's developer tools. I
 think it'd be pretty cool if the bundling process also automatically populated
 the initial HTML file in order to make the initial page load feel faster, but
 that's a project for another day.
-
-### Organizational Structure:
