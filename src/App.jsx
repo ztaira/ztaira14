@@ -4,9 +4,6 @@ import './App.css';
 import MenuBar from './MenuBar/MenuBar.jsx';
 import Homepage from './Home/Homepage.jsx';
 import ProjectsPage from './Projects/ProjectsPage.jsx';
-import BlogPage from './Blog/BlogPage.jsx';
-import Page from './Blog/Page.jsx';
-import PageNotFound from './PageNotFound.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +12,6 @@ class App extends Component {
       menuitems: [
         'Home',
         'Projects',
-        'Blog',
       ],
       sidebaritems: [
         {
@@ -57,18 +53,6 @@ class App extends Component {
     this.xhp.send();
   }
 
-  ReturnListRoutes(entry) {
-    let url = 'https://raw.githubusercontent.com/ztaira14/journal/master/';
-    return (
-      <Route
-        key={entry.file_name}
-        path={"/Blog/" + entry.file_name.slice(0, -3)}
-        component={() => <Page
-          url={url + entry.file_name}
-        />}
-      />)
-  }
-
   render() {
     return (
       <HashRouter history={browserHistory}>
@@ -78,15 +62,6 @@ class App extends Component {
             <Route exact path="/" component={ProjectsPage} />
             <Route path="/Home" component={Homepage} />
             <Route path="/Projects" component={ProjectsPage} />
-            <Route
-              exact
-              path="/Blog"
-              component={() => <BlogPage
-                allEntries={this.state.allEntries}
-              />}
-            />
-            {this.state.allEntries.map(this.ReturnListRoutes)}
-            <Route component={PageNotFound} />
           </Switch>
         </div>
       </HashRouter>

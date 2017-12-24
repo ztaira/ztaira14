@@ -38,7 +38,7 @@ it('has the expected menu items', () => {
     <App />,
     document.body.appendChild(document.createElement('div'))
   );
-  expect(app.state.menuitems).toEqual(['Home', 'Projects', 'Blog']);
+  expect(app.state.menuitems).toEqual(['Home', 'Projects']);
 });
 
 it('has the expected sidebar items', () => {

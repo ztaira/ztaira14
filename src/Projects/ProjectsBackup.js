@@ -135,15 +135,6 @@ export default [
     "language": "Python",
   },
   {
-    "name": "journal",
-    "html_url": "https://github.com/ztaira14/journal",
-    "description": "A public journal",
-    "fork": false,
-    "created_at": "2017-05-29T14:55:15Z",
-    "updated_at": "2017-05-29T14:55:15Z",
-    "language": null,
-  },
-  {
     "name": "JSTest",
     "html_url": "https://github.com/ztaira14/JSTest",
     "description": "This test bounces a ball.",
