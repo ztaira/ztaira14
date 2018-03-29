@@ -29,30 +29,6 @@ class App extends Component {
     }
   }
 
-// ===========================================================================
-// GET THE REPOSITORY DATA FROM GITHUB
-// ===========================================================================
-
-  componentDidMount() {
-    this.GetText('https://raw.githubusercontent.com/ztaira14/journal/master/index.json');
-  }
-
-  componentWillUnmount() {
-    this.xhp.abort();
-  }
-
-  GetText(url) {
-    let _this = this;
-    this.xhp = new XMLHttpRequest();
-    this.xhp.onload = function() {
-      _this.setState({
-        allEntries: JSON.parse(this.responseText),
-      });
-    };
-    this.xhp.open('GET', url);
-    this.xhp.send();
-  }
-
   render() {
     return (
       <HashRouter history={browserHistory}>

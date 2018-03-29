@@ -14,8 +14,53 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Zachary Taira</title>
+    <style>
+      .LoadingSpinwheel {
+          border-left: 24px solid #f9e79f; /* Yellow */
+          border-bottom: 24px solid #a9dfbf; /* Green */
+          border-right: 24px solid #aed6f1; /* Blue */
+          border-top: 24px solid #f5b7b1; /* Red */
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          margin: 10% auto;
+          animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+      .LoadingMenuBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-width: 320px;
+        height: 50px;
+        margin: 0px;
+        padding: 0px;
+        border-bottom: 1px solid #a0a0a0;
+        background-color: rgb(255, 255, 255);
+      }
+      body {
+        background-color: #e1e1e1;
+      }
+      .LoadingProjectContent {
+        height: 400px;
+        margin: 80px 2% 50px 2%;
+        padding: 20px 10px;
+        background-color: #fafafa;
+        border-radius: 7px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="LoadingMenuBar"></div>
+      <div class="LoadingProjectContent">
+        <div class="LoadingSpinwheel"></div>
+      </div>
+    </div>
   </body>
 </html>
